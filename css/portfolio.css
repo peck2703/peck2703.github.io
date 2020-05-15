@@ -1,0 +1,493 @@
+@charset "utf-8";
+html{
+	background-color: #54A3B7;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	box-sizing: border-box;
+}
+*, *:before, *:after{
+	box-sizing: inherit;
+}
+.more{
+	display: none;
+}
+h1, h2, h3{
+	margin-bottom: -10px;
+} h4, h5, h6{
+	margin-bottom: 0px;
+}
+header{
+	font-size: 36px;
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+p.info{
+	font-size: 14px;
+	font-style: oblique;
+	text-align: justify;
+}
+.tab{
+	/*overflow: hidden;*/
+	border: thin;
+	outline: thin;
+	padding: 12px 0px;
+	background-color: white;
+	cursor: pointer;
+	font-size: 18px;
+	font-weight: bold;
+}
+.tab-button{
+	float: left;
+	transition: 0.3s;
+	border: thin;
+	outline: thin;
+	padding: 12px 12px;
+	background-color: white;
+	cursor: pointer;
+}
+.tab-content{
+	display: none;
+	padding: 6px 12px;
+	border: 1px solid;
+	border-top: none;
+}
+article{
+	padding-top: 12px;
+}
+section:after{
+	
+}
+.content{
+	font-size: 10pt;
+}
+.img-school-logo{
+	float: right;
+	background-repeat: no-repeat;
+	align-content: right;
+	vertical-align: top;
+	padding-right: 24px;
+	margin-top: -12px;
+}
+.container{
+	margin-left: 20px;
+	padding-left: 10px;
+	padding-top: 15px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	height: 100%;
+	width: 100%;
+	background-color: white;
+}
+.left-one-fourth{
+	min-width: 200px;
+	height: 85.75%;
+	float: left;
+	position:fixed;
+	max-width: 200px;
+}
+footer{
+	background: #666;
+	color: white;
+	font-size: 10pt;
+	display: block;
+	min-height: 50px;
+	width: 101.125%;
+	height: 100%;
+	float: left;
+	margin-top: 10px;
+	margin-left: -10px;
+	position:sticky;
+}
+.footer-left{
+	width: 33.33%;
+	float: left;
+	padding: 5px 20px;
+}
+.footer-middle{
+	width: 33.33%;
+	float: left;
+	padding: 5px 20px;
+}
+.footer-right{
+	width: 33.33%;
+	float: left;
+	padding: 5px 20px;
+}
+.middle-half{
+	width: 57%;
+	height: 100%;
+	float: left;
+	position: static;
+	margin-left: 240px;
+}
+.fourth-quarter{
+	width: 24.5%;
+	height: 100%;
+	min-width: 100px;
+	margin-right: 15px;
+	float:right;
+	position: static;
+}
+.top-banner{
+	width: 83%;
+	min-height: 200px;
+	margin-left: 240px;
+}
+img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	align-items: center;
+	align-content: center;
+}
+.spacing-right{
+	margin-right: 20px;
+}
+
+/* Sidenav parameters */
+
+.closedSidenav{
+	height:100%;
+	width: 2.5%;
+	top: 10px;
+	left: 10px;
+}
+.openSidenav{
+	font-size: 24px;
+	cursor: pointer;
+	height: 50%
+}
+.sidenav{
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #3C3B3E;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 20px;
+	opacity: 0.75;
+}
+.sidenav a{
+	padding: 8px 8px 8px 8px;
+	text-decoration:none;
+	font-size: 24px;
+	color: #BFB4B4;
+	display: block;
+	transition: 0.3s;
+}
+.sidenav a:hover{
+	color:#FFFDFD;
+	font-size: 36px;
+}
+.sidenav .closebtn{
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 24px;
+	margin-left: 25px;
+}
+.text-spacing-left{
+	padding-left: 10px;
+}
+
+/*Social media section below */
+
+.social-media{
+	min-width: 64px;
+	min-height: 64px;
+	align-content: center;
+	display: flex;
+	padding: 6px;
+	margin-left: -14px;
+}
+.facebook{
+	background-image: url(../images/icons/facebook-icon.png);
+	background-repeat: no-repeat;
+}
+.linkedin{
+	background-image: url(../images/icons/linkedin-icon.png);
+	background-repeat: no-repeat;
+}
+.blogger{
+	background-image: url(../images/icons/blogger-icon.png);
+	background-repeat: no-repeat;
+}
+.google{
+	background-image: url(../images/icons/google-plus-icon.png);
+	background-repeat: no-repeat;
+}
+.twitter{
+	background-image: url(../images/icons/twitter-icon.png);
+	background-repeat: no-repeat;
+}
+.youtube{
+	background-image: url(../images/icons/youtube-icon.png);
+	background-repeat: no-repeat;
+}
+/*Adding the various skills in here as class levels*/
+
+.skills{
+	text-align: right;
+	vertical-align: top;
+	padding: 10px;
+	color: white;
+	height: 35px;
+	border-radius: 6px;
+	margin-bottom: 14px;
+}
+.left-skill-text
+{
+	float:left;
+	font-size: 8px;
+}
+
+/*General Skills
+
+  Forest green 	- top tier,
+  Blue 			- second tier
+  orange/yellow - third tier
+  Red 			- lowest tier
+
+*/
+.skill-written{
+	width: 95%;
+	background-color: forestgreen;
+}
+.skill-verbal{
+	width: 90%;
+	background-color: forestgreen;
+}
+.skill-agile-build{
+	width: 85%;
+	background-color: forestgreen;
+}
+.skill-agile-programmer{
+	width: 80%;
+	background-color: forestgreen;
+}
+.skill-agile-owner{
+	width: 75%;
+	background-color:#2560BB;
+}
+
+/* Language Skills */
+
+.skill-csharp{
+	width: 90%;
+	background-color: forestgreen;
+}
+.skill-java{
+	width: 80%;
+	background-color: forestgreen;
+}
+.skill-cplusplus{
+	width: 80%;
+	background-color: forestgreen;
+}
+.skill-html{
+	width: 65%;
+	background-color: #2560BB;
+}
+.skill-css{
+	width: 55%;
+	background-color: #2560BB;
+}
+.skill-c{
+	width: 40%;
+	background-color: orange;
+}
+.skill-obj-c{
+	width: 25%;
+	background-color: red;
+}
+
+/* Game Engine Skills */
+
+.skill-unreal-bp{
+	width: 85%;
+	background-color: forestgreen;
+}
+.skill-unity3d{
+	width: 75%;
+	background-color: #2560BB;
+}
+.skill-unreal-cplusplus{
+	width: 60%;
+	background-color:#2560BB;
+}
+/* Add in a collapsible button to see if it will work with progress bars */
+
+.collapsible{
+	cursor: pointer;
+	padding: 12px;
+	border: none;
+	outline: none;
+	font-size: 14px;
+}
+.collapsible:hover{
+	background-color: grey;
+}
+.content{
+	padding: 0 12px;
+	display: none;
+	overflow: hidden;
+	background-color: lightgray;
+	text-align: left;
+}
+
+/* All portfolio options section */
+
+.row{
+	margin: 8px 0px;
+}
+.row,
+.row > .column{
+	padding: 8px;
+}
+.row:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.column{
+	float: left;
+	width: 33%;
+	display: none;
+	margin-bottom: 0px;
+	padding: 0 -12px;
+}
+.portfolio-content{
+	background-color: white;
+	padding: 12px;
+	z-index: -1;
+}
+.portfolio-text{
+	font-size: 10pt;
+	text-align: justify;
+}
+.portfolio-img{
+	object-fit: scale-down;
+	min-height: 200px;
+	min-width: 200px;
+	max-height: 200;
+	max-height: 200px;
+	padding-top: 20px;
+}
+.show{
+	display: block;
+}
+.btn{
+	border: thin;
+	outline: thin;
+	padding: 12px 12px;
+	background-color: white;
+	cursor: pointer;
+}
+.btn-container{
+	padding: 0px 4px;
+}
+.btn:hover{
+	opacity: 0.75;
+	outline: groove;
+	background-color: lightcyan;
+}
+.btn:active{
+	background-color: #666;
+	color: lightgray;
+	outline: double;
+}
+.active-button{
+	background-color: lightgray;
+	outline: groove;
+}
+.unity-button{
+	border: none;
+	outline: none;
+	padding: 12px;
+	background-color: white;
+	cursor: pointer;
+}
+.unreal-button{
+	border: none;
+	outline: none;
+	padding: 12px;
+	background-color: white;
+	cursor: pointer;
+}
+.design-button{
+	border: none;
+	outline: none;
+	padding: 12px;
+	background-color: white;
+	cursor: pointer;
+}
+.portfolio-card{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	min-height: 425px;
+}
+.portfolio-container{
+	padding: 0 12px;
+}
+.portfolio-container::after{
+	content: "";
+	clear: both;
+	display: table;
+}
+.portfolio-button{
+	border: none;
+	outline: 0;
+	display: inline-block;
+	padding: 12px;
+	color: white;
+	background-color: deepskyblue;
+	text-align: center;
+	cursor: pointer;
+	align-content: center;
+	width: 100%;
+	bottom: 20px;
+}
+@media screen and (max-height:450px){
+	.sidenav{
+		padding-top: 15px;
+	}
+	.sidenav a{
+		font-size: 12px;
+	}
+	.container{
+	margin-left: 20px;
+	padding-left: 10px;
+	padding-top: 15px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	height: 100%;
+	width: 100%;
+	background-color: white;
+	}
+	.left-one-fourth{
+		min-width: 200px;
+		height: 100%;
+		float: left;
+	}
+	.middle-half{
+		width: 45%;
+		height: 100%;
+		float: left;
+	}
+	.fourth-quarter{
+		width: 12.25%;
+		height: 100%;
+		min-width: 100px;
+		margin-right: 15px;
+		float:right;
+	}
+	.top-banner{
+		width: 60%;
+		min-height: 200px;
+		float: left;
+		margin-left: 20px;
+	}
+}

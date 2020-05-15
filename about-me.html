@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>Welcome to My Portfolio!</title>
+		
+		<!--Add in the style sheet-->
+		<link rel="stylesheet" href="css/portfolio.css">
+		
+		
+		
+	</head>
+	<body>
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onClick="closeNav()">&times;</a>
+			<a href="index.html">Home</a>
+			<a href="index.html">About Me</a>
+			<a href="portfolio.html">Portfolio</a>
+			<a href="index.html">Contact Me</a>
+		</div>
+		
+		<!-- Begin left column-->
+		<div class="closedSidenav" id="main">
+			<span class="openSidenav" onClick="openNav()">&#9776;</span>
+			<div class="left-one-fourth container">
+				<img src="images/selfie.png">
+				<hr>
+				<h2>
+					Michael Peck
+				</h2>
+				<h4>
+					Game Programmer/
+					<br>
+					Software Developer
+				</h4>
+				<hr>
+				<h4>
+					Basic Information
+				</h4>
+				<p class="info">
+					Birthday: August 1, 1990
+				</p>
+				<p class="info">
+					Location: Milwaukee, WI
+				</p>
+				<p class="info">
+					E-Mail: Mrpeckjr@gmail.com
+				</p>
+				<hr>
+				<span class="social-media">
+					<a href="https://www.facebook.com/Onewingedangel2703" target="_blank">
+						<img class="facebook" src="images/icons/facebook-icon.png">
+					</a>
+					<a href="https://www.linkedin.com/in/peck2703/" target="_blank">
+						<img class="linkedin" src="images/icons/linkedin-icon.png">
+					</a>
+					<a href="https://plus.google.com/u/0/+MichaelPeckJr" target="_blank">
+						<img class="google" src="images/icons/google-plus-icon.png">
+					</a>
+				</span>
+				<span class="social-media">
+					<a href="http://www.youtube.com/c/MichaelPeckJr" target="_blank">
+						<img class="youtube" src="images/icons/youtube-icon.png">
+					</a>
+					<a href="https://twitter.com/mrpeckjr" target="_blank">
+						<img class="twitter" src="images/icons/twitter-icon.png">
+					</a>
+					<a href="https://csgportfoliomichaelpeck.blogspot.com/" target="_blank">
+						<img class="blogger" src="images/icons/blogger-icon.png">
+					</a>
+				</span>
+		  </div>
+		</div>
+	  
+		<!--Begin Middle Column (half) -->
+		<div class="middle-half container">
+			<div>
+				<section>
+				<article>
+					<header>Who I am</header>
+					My name is Michael and I have recently graduated from Southern New Hampshire University with a Bachelor's of Science in the Game Programming & Development online program. I am a resident in the Milwaukee area of Southwestern Wisconsin, but I am originally from the New England area.
+				</article>
+				</section>
+			</div>
+		</div>
+		
+		<!--Begin right-most column (quarter) -->
+		<div class="fourth-quarter container" id="fourth">
+			<div>
+				<header>
+					Quick Fun Facts
+				</header>
+				
+				<!--These next sections are for the quick facts about me -->
+				<section class="facts">
+					Favorite Books
+				</section>
+				<section class="facts">
+					Favorite Movies
+				</section>
+				<section class="facts">
+					Favorite TV Shows
+				</section>
+				<section class="facts">
+					Favorite Video Games
+				</section>
+				<section class="facts">
+					Favorite Music Genre
+				</section>
+				<section class="facts">
+					Favorite Musical Artist
+				</section>
+			</div>
+		</div>	
+	</body>
+	<!--Add in the java script-->
+		<script src="js/sidenav.js"></script>
+		<script src="js/port-filter.js"></script>
+		<script src="js/collapsible.js"></script>
+		<script src="js/readmore.js"></script>
+	<script>
+		var coll = document.getElementsByClassName("collapsible");
+		var i;
+
+		for (i = 0; i < coll.length; i++) {
+		  coll[i].addEventListener("click", function() {
+			this.classList.toggle("active");
+			var content = this.nextElementSibling;
+			if (content.style.display === "block") {
+			  content.style.display = "none";
+			} else {
+			  content.style.display = "block";
+			}
+		  });
+		}
+	</script>
+</html>
