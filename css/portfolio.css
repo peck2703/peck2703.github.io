@@ -1,8 +1,7 @@
 @charset "UTF-8";
 /* Body */
 body {
-	font-family: source-sans-pro;
-	background-color: #f2f2f2;
+	background-color: #222629;
 	margin-top: 0px;
 	margin-right: 0px;
 	margin-bottom: 0px;
@@ -16,17 +15,16 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	height: 1000px;
-	background-color: #FFFFFF;
 }
 /* Navigation */
 header {
 	width: 100%;
 	height: 5%;
-	background-color: #52bad5;
-	border-bottom: 1px solid #2C9AB7;
+	background-color: #222629;
+	border-bottom: 1px solid #61892F;
 }
 .logo {
-	color: #fff;
+	color: #61892F;
 	font-weight: bold;
 	text-align: undefined;
 	width: 10%;
@@ -47,7 +45,7 @@ header nav ul {
 }
 nav ul li {
 	float: left;
-	color: #FFFFFF;
+	color: #61892F;
 	font-size: 14px;
 	text-align: left;
 	margin-right: 25px;
@@ -56,34 +54,32 @@ nav ul li {
 	transition: all 0.3s linear;
 }
 ul li a {
-	color: #FFFFFF;
+	color: #61892F;
 	text-decoration: none;
 }
 ul li:hover a {
-	color: #2C9AB7;
+	color: #86C232;
 }
-.hero_header {
-	color: #FFFFFF;
+.home_header {
+	color: #474B4F;
 	text-align: center;
 	margin-top: 0px;
 	margin-right: 0px;
 	margin-bottom: 0px;
 	margin-left: 0px;
 	letter-spacing: 4px;
+	padding-top: 150px;
+	padding-bottom: 50px;
 }
 /* Hero Section */
-.hero {
-	background-color: #B3B3B3;
+.home {
+	background-color: #6B6E70;
 	padding-top: 150px;
 	padding-bottom: 150px;
 }
-.light {
-	font-weight: bold;
-	color: #717070;
-}
 .tagline {
 	text-align: center;
-	color: #FFFFFF;
+	color: #61892F;
 	margin-top: 4px;
 	font-weight: lighter;
 	text-transform: uppercase;
@@ -91,24 +87,25 @@ ul li:hover a {
 }
 /* About Section */
 .text_column {
-	width: 29%;
+	width: auto;
 	text-align: justify;
 	font-weight: lighter;
 	line-height: 25px;
 	float: left;
 	padding-left: 20px;
 	padding-right: 20px;
-	color: #A3A3A3;
+	color: #FFF;
 }
 .about {
 	padding-left: 25px;
 	padding-right: 25px;
 	padding-top: 35px;
 	display: inline-block;
-	background-color: #FFFFFF;
+	background-color: #222629;
 	margin-top: 0px;
 }
 /* Stats Gallery */
+/*Change entirely to sample of games*/
 .stats {
 	color: #717070;
 	margin-bottom: 5px;
@@ -117,14 +114,14 @@ ul li:hover a {
 	clear: both;
 	display: inline-block;
 	width: 100%;
-	background-color: #FFFFFF;
+	background-color: #222629;
 	/* [disabled]min-width: 400px;
 */
 	padding-bottom: 35px;
 	padding-top: 0px;
 	margin-top: -5px;
 	margin-bottom: 0px;
-}
+}/*Remove to replace with Carousel*/
 .thumbnail {
 	width: 25%;
 	text-align: center;
@@ -145,8 +142,35 @@ ul li:hover a {
 	margin-left: 0px;
 	color: #A3A3A3;
 }
+/*End of remove gallery thumbnails*/
+
+
 /* Parallax Section */
-.banner {
+.home-banner {
+	background-color: #2D9AB7;
+	background-image: url("../images/parallax.png");
+	height: 400px;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.pro-banner {
+	background-color: #2D9AB7;
+	background-image: url("../images/parallax.png");
+	height: 400px;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.per-banner {
+	background-color: #2D9AB7;
+	background-image: url("../images/parallax.png");
+	height: 400px;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.bottom-banner {
 	background-color: #2D9AB7;
 	background-image: url(../images/parallax.png);
 	height: 400px;
@@ -366,7 +390,7 @@ nav ul li {
 	float: none;
 	overflow: auto;
 	display: inline-block;
-	background: #52bad5;
+	background: #222629;
 }
 header nav ul {
 	padding: 0px;
@@ -444,7 +468,7 @@ nav ul li {
 	width: 100%;
 	padding-top: 30px;
 }
-.banner {
+.home-banner, .bottom-banner {
 	padding-left: 20px;
 	padding-right: 20px;
 }
@@ -456,7 +480,8 @@ nav ul li {
 /* Small Desktops */
 @media (min-width: 768px) and (max-width: 1096px) {
 .text_column {
-	width: 100%;
+	width: 100%;    
+	
 }
 .thumbnail {
 	width: 50%;
@@ -472,8 +497,8 @@ nav ul li {
 	padding-bottom: 0px;
 	padding-left: 0px;
 }
-.banner {
-	margin-top: 0px;
-	padding-top: 0px;
+.home-banner, .bottom-banner {
+	padding-left: 20px;
+	padding-right: 20px;
 }
 }
