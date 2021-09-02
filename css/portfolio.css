@@ -27,7 +27,7 @@ header {
 	color: #61892F;
 	font-weight: bold;
 	text-align: undefined;
-	width: 10%;
+	width: 20%;
 	float: left;
 	margin-top: 15px;
 	margin-left: 25px;
@@ -35,7 +35,7 @@ header {
 }
 nav {
 	float: right;
-	width: 50%;
+	width: 75%;
 	text-align: right;
 	margin-right: 25px;
 }
@@ -52,6 +52,7 @@ nav ul li {
 	letter-spacing: 2px;
 	font-weight: bold;
 	transition: all 0.3s linear;
+	background-color: 222629;
 }
 ul li a {
 	color: #61892F;
@@ -59,6 +60,16 @@ ul li a {
 }
 ul li:hover a {
 	color: #86C232;
+}
+.section_title {
+	color: #FFF;
+	text-align: left;
+	letter-spacing: 8px;
+}
+.contact_title {
+	color: #000;
+	text-align: left;
+	letter-spacing: 8px;
 }
 .home_header {
 	color: #474B4F;
@@ -204,19 +215,15 @@ footer {
 	background-color: #FFFFFF;
 	padding-bottom: 35px;
 }
-.footer_column {
-	width: 50%;
-	text-align: center;
-	padding-top: 30px;
+.contact-text{
+	width: 70%;
+	margin-left: 24px;
 	float: left;
 }
-footer .footer_column h3 {
-	color: #B3B3B3;
-	text-align: center;
-}
-footer .footer_column p {
-	color: #717070;
-	background-color: #FFFFFF;
+.contact-links{
+	width: 30%;
+	padding: 4px;
+	float: right;
 }
 .cards {
 	width: 100%;
@@ -271,8 +278,8 @@ footer .footer_column p {
 }
 .footer_banner {
 	background-color: #B3B3B3;
-	padding-top: 60px;
-	padding-bottom: 60PX;
+	padding-top: 6px;
+	padding-bottom: 12px;
 	margin-bottom: 0px;
 	background-image: url(../images/pattern.png);
 	background-repeat: repeat;
@@ -282,6 +289,115 @@ footer {
 }
 .hidden {
 	display: none;
+}
+
+.linked-in{
+	background-image: url("../images/icons/linkedin-icon.png");
+}
+
+* {
+  box-sizing: border-box;
+}
+.image-container{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 750px;
+	position: relative;
+	object-fit: cover;
+}
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(13, 15, 16, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #fff;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222629;
+  padding: 2px 16px;
+  color: white;
+  font-size: 14pt;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+  max-height: 150px;
+  height: 150px;
+  max-height: 150px;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+img{
+	max-height: 400px;
+	max-width: 100%;
+	margin: auto;
+	object-fit: cover;
+}
+.thumbnail-img{
+	height: 150px;
+	width: 150px;
+    object-fit: cover;
+	object-position: center;
 }
 
 /* Mobile */
@@ -300,6 +416,7 @@ footer {
 	margin-bottom: 0px;
 	margin-left: 0px;
 	width: 100%;
+	height: 100px;
 	float: none;
 	display: none;
 }
@@ -367,6 +484,48 @@ nav ul li {
 	padding-right: 10px;
 	line-height: 22px;
 	text-align: center;
+}
+.section_title {
+	color: #FFF;
+	text-align: left;
+	letter-spacing: 8px;
+}.contact_title {
+	color: #000;
+	text-align: left;
+	letter-spacing: 8px;
+}
+/* Parallax Section */
+.home-banner {
+	background-color: #2D9AB7;
+	background-image: url("../images/parallax.png");
+	height: 400px;
+	background-attachment: relative;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.pro-banner {
+	background-color: #2D9AB7;
+	background-image: url("../images/parallax.png");
+	height: 400px;
+	background-attachment: relative;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.per-banner {
+	background-color: #2D9AB7;
+	background-image: url("../images/parallax.png");
+	height: 400px;
+	background-attachment: relative;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.bottom-banner {
+	background-color: #2D9AB7;
+	background-image: url(../images/parallax.png);
+	height: 400px;
+	background-attachment: relative;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 }
 
@@ -475,13 +634,54 @@ nav ul li {
 .footer_column {
 	width: 100%;
 }
+.section_title {
+	color: #FFF;
+	text-align: left;
+	letter-spacing: 8px;
 }
-
+	.contact_title {
+	color: #000;
+	text-align: left;
+	letter-spacing: 8px;
+}
+/* Parallax Section */
+.home-banner {
+	background-color: #2D9AB7;
+	background-image: url("../images/parallax.png");
+	height: 400px;
+	background-attachment: relative;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.pro-banner {
+	background-color: #2D9AB7;
+	background-image: url("../images/parallax.png");
+	height: 400px;
+	background-attachment: relative;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.per-banner {
+	background-color: #2D9AB7;
+	background-image: url("../images/parallax.png");
+	height: 400px;
+	background-attachment: relative;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.bottom-banner {
+	background-color: #2D9AB7;
+	background-image: url(../images/parallax.png);
+	height: 400px;
+	background-attachment: relative;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+}
 /* Small Desktops */
 @media (min-width: 768px) and (max-width: 1096px) {
 .text_column {
 	width: 100%;    
-	
 }
 .thumbnail {
 	width: 50%;
