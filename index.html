@@ -7,6 +7,11 @@
 	<title>Michael Peck</title>
 	<link href="css/portfolio.css" rel="stylesheet" type="text/css">
 	<script src="/js/image-slider.js" type="text/javascript" ></script>
+	<script src="/js/top-button.js" type="text/javascript"></script>
+	
+<!--	local machine only-->
+	<script src="js/image-slider.js" type="text/javascript" ></script>
+	<script src="js/top-button.js" type="text/javascript"></script>
 	
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -17,206 +22,167 @@
 </head>
 	
 <body>
-
 	<!-- Main Container -->
-<div class="container"> 
-  <!-- Navigation -->
-  <header> <a href="">
-    <h4 class="logo"></h4>
-    </a>
-    <nav>
-      <ul>
-        <li><a href="#about">ABOUT ME</a></li>
-		  <li><a href="#pro">PROFESSIONAL PROJECTS</a></li>
-		  <li><a href="#per">PERSONAL PROJECTS</a></li>
-        <li> <a href="#contact">CONTACT</a></li>
-      </ul>
-    </nav>
-  </header>
-	
-  <!-- Hero Section -->
-  <section class="home-banner" id="home">
-    <h2 class="home_header">About Me</h2>
-    <p class="tagline">Who I am and what I do</p>
-  </section>
-	
-  <!-- About Me Section -->
-  <section class="about" id="about">
-    <h2 class="section_title">About Me</h2>
-    <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-  </section>
+	<div class="container">
+	  <!-- Navigation -->
+	  <header> <a href="">
+		<h4 class="logo"></h4>
+		</a>
+		<nav>
+		  <ul>
+			<li><a href="#about">ABOUT ME</a></li>
+			  <li><a href="#pro">PROFESSIONAL PROJECTS</a></li>
+			  <li><a href="#per">PERSONAL PROJECTS</a></li>
+			<li> <a href="#contact">CONTACT</a></li>
+		  </ul>
+		</nav>
+	  </header>
 
-	<!-- Hero Section -->
-  <section class="pro-banner" id="pro">
-    <h2 class="home_header">Professional Projects</h2>
-    <p class="tagline">List of all professional projects completed and/or in progress</p>
-  </section>
-	
-  <!-- About Me Section -->
-  <section class="about" id="pro-article">
-    <h2 class="section_title">Professional Projects</h2>
-    <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-  </section>
-	
-<!--This will be a carousel for pro projects, videos, GIFs, and screenshots -->
-  <!-- Stats Gallery Section -->
-	
+		<!-- Scroll to Top Button -->
+		<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
-<!-- Full-width images with number text -->
-<!-- Container for the image gallery -->
-<div class="image-container">
+		<!-- Hero Section -->
+		<section class="home-banner" id="home">
+			<h2 class="home_header">About Me</h2>
+			<p class="tagline">Who I am and what I do</p>
+		</section>
 
-  <!-- Full-width images with number text -->
-  <div class="mySlides active-img" style="display: block;">
-<!--    <div class="numbertext">1 / 6</div>-->
-      <img src="images/screenshots/gam-207/Module_Three_Screen_1_Michael_Peck.PNG" style="width:100%">
-  </div>
+		<!-- About Me Section -->
+		<section class="about" id="about">
+			<h2 class="section_title">About Me</h2>
+			<p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+		</section>
 
-  <div class="mySlides active-img">
-<!--    <div class="numbertext">2 / 6</div>-->
-      <img src="images/screenshots/gam-207/Module_Three_Screen_1_Michael_Peck.PNG" style="width:100%">
-  </div>
+		<!-- Hero Section -->
+		<section class="pro-banner" id="pro">
+			<h2 class="home_header">Professional Projects</h2>
+			<p class="tagline">List of all professional projects completed and/or in progress</p>
+		</section>
 
-  <div class="mySlides active-img">
-<!--    <div class="numbertext">3 / 6</div>-->
-      <img src="images/screenshots/gam-207/Module_Three_Screen_1_Michael_Peck.PNG" style="width:100%">
-  </div>
+		<!-- About Me Section -->
+		<section class="about" id="pro-article">
+			<h2 class="section_title">Professional Projects</h2>
+			<p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+			<p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
 
-  <div class="mySlides active-img">
-<!--    <div class="numbertext">4 / 6</div>-->
-      <img src="images/screenshots/gam-207/Module_Three_Screen_1_Michael_Peck.PNG" style="width:100%">
-  </div>
+		</section>
 
-  <div class="mySlides active-img">
-<!--    <div class="numbertext">5 / 6</div>-->
-      <img src="images/screenshots/gam-207/Module_Three_Screen_1_Michael_Peck.PNG" style="width:100%">
-  </div>
+		<!-- Full-width images with number text -->
+		<!-- Container for the image gallery -->
+		<div class="image-container">
 
-  <div class="mySlides active-img">
-<!--    <div class="numbertext">6 / 6</div>-->
-      <img src="images/screenshots/gam-207/Module_Three_Screen_1_Michael_Peck.PNG" style="width:100%">
-  </div>
+			<!-- Full-width images with number text -->
+			<div class="mySlides active-img" style="display: block;">
+				<img src="images/screenshots/gam-207/Module_Three_Screen_1_Michael_Peck.PNG" style="width:100%">
+			</div>
 
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+			<div class="mySlides active-img">
+				<img src="images/screenshots/gam-207/Module_Three_Screen_1_Michael_Peck.PNG" style="width:100%">
+			</div>
 
-  <!-- Image text -->
-  <div class="caption-container" >
-    <p id="caption" style="display: block;">&nbsp;</p>
-  </div>
+			<div class="mySlides active-img">
+				<img src="images/screenshots/gam-207/Module_Three_Screen_1_Michael_Peck.PNG" style="width:100%">
+			</div>
 
-  <!-- Thumbnail images -->
-  <div class="row">
-    <div class="column">
-      <img class="demo cursor thumnail-img" src="images/screenshots/gam-312/AISpline.PNG" onclick="currentSlide(1)" alt="The Woods">
-    </div>
-    <div class="column">
-      <img class="demo cursor thumnail-img" src="images/demos/cleanYourRoom.png"  onclick="currentSlide(2)" alt="Cinque Terre">
-    </div>
-    <div class="column">
-      <img class="demo cursor thumnail-img" src="images/screenshots/gam-312/BetaLevelPickupBP.PNG" onclick="currentSlide(3)" alt="Mountains and fjords">
-    </div>
-    <div class="column">
-      <img class="demo cursor thumnail-img" src="img_lights.jpg" onclick="currentSlide(4)" alt="Northern Lights">
-    </div>
-    <div class="column">
-      <img class="demo cursor thumnail-img" src="img_nature.jpg" onclick="currentSlide(5)" alt="Nature and sunrise">
-    </div>
-    <div class="column">
-      <img class="demo cursor thumnail-img" src="img_snow.jpg" onclick="currentSlide(6)" alt="Snowy Mountains">
-    </div>
-  </div>
-</div>
-	
-<!-- Hero Section -->
-  <section class="per-banner" id="per">
-	  <h2 class="home_header">Personal</h2>
-    <p class="tagline">List of best Personal projects completed and/or in progress</p>
-  </section>  
-	
-	<!-- About Me Section -->
-  <section class="about" id="per-article">
-    <h2 class="section_title">Personal Projects</h2>
-    <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-	
-  </section>
+			<div class="mySlides active-img">
+				<img src="images/screenshots/gam-207/Module_Three_Screen_1_Michael_Peck.PNG" style="width:100%">
+			</div>
 
-	<!--This will be a carousel for pro projects, videos, GIFs, and screenshots -->
-  <!-- Stats Gallery Section -->
-  <div class="gallery">
-    <div class="thumbnail">
-      <h1 class="stats">1500</h1>
-      <h4>TITLE</h4>
-      <p>One line description</p>
-    </div>
-    <div class="thumbnail">
-      <h1 class="stats">2300</h1>
-      <h4>TITLE</h4>
-      <p>One line description</p>
-    </div>
-    <div class="thumbnail">
-      <h1 class="stats">7500</h1>
-      <h4>TITLE</h4>
-      <p>One line description</p>
-    </div>
-    <div class="thumbnail">
-      <h1 class="stats">9870</h1>
-      <h4>TITLE</h4>
-      <p>One line description</p>
-    </div>
-  </div>
-  
-  <!-- Contact Section -->
-  <section class="footer_banner" id="contact">
-    <h2 class="contact_title">How To Contact Me</h2>
-    <div class="contact-text">
-		<p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-	</div>
-	  <div class="contact-links">
-		  <div class="contact-links">
-		<a href="#" class="contact-links linked-in"></a>
-	</div>
+			<div class="mySlides active-img">
+				<img src="images/screenshots/gam-207/Module_Three_Screen_1_Michael_Peck.PNG" style="width:100%">
+			</div>
+
+			<div class="mySlides active-img">
+				<img src="images/screenshots/gam-207/Module_Three_Screen_1_Michael_Peck.PNG" style="width:100%">
+			</div>
+
+			<!-- Next and previous buttons -->
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+			<!-- Image text -->
+			<div class="caption-container" >
+				<p id="caption" style="display: block;">&nbsp;</p>
+			</div>
+
+			<!-- Thumbnail images -->
+			<div class="row">
+				<div class="column">
+					<img class="demo cursor thumbnail-img" src="images/screenshots/gam-312/AISpline.PNG" onclick="currentSlide(1)" alt="The Woods">
+				</div>
+				<div class="column">
+					<img class="demo cursor thumbnail-img" src="images/demos/cleanYourRoom.png"  onclick="currentSlide(2)" alt="Cinque Terre">
+				</div>
+				<div class="column">
+					<img class="demo cursor thumbnail-img" src="images/screenshots/gam-312/BetaLevelPickupBP.PNG" onclick="currentSlide(3)" alt="Mountains and fjords">
+				</div>
+				<div class="column">
+					<img class="demo cursor thumbnail-img" src="img_lights.jpg" onclick="currentSlide(4)" alt="Northern Lights">
+				</div>
+				<div class="column">
+					<img class="demo cursor thumbnail-img" src="img_nature.jpg" onclick="currentSlide(5)" alt="Nature and sunrise">
+				</div>
+				<div class="column">
+					<img class="demo cursor thumbnail-img" src="img_snow.jpg" onclick="currentSlide(6)" alt="Snowy Mountains">
+				</div>
+			</div>
+		</div>
+
+		<!-- Hero Section -->
+			<section class="per-banner" id="per">
+				<h2 class="home_header">Personal</h2>
+				<p class="tagline">List of best Personal projects completed and/or in progress</p>
+			</section>  
+
+		<!-- About Me Section -->
+		<section class="about" id="per-article">
+			<h2 class="section_title">Personal Projects</h2>
+			<p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+		</section>
+
+		<!--This will be a carousel for pro projects, videos, GIFs, and screenshots -->
+	  <!-- Stats Gallery Section -->
+	  <div class="gallery">
+		<div class="thumbnail">
+		  <h1 class="stats">1500</h1>
+		  <h4>TITLE</h4>
+		  <p>One line description</p>
+		</div>
+		<div class="thumbnail">
+		  <h1 class="stats">2300</h1>
+		  <h4>TITLE</h4>
+		  <p>One line description</p>
+		</div>
+		<div class="thumbnail">
+		  <h1 class="stats">7500</h1>
+		  <h4>TITLE</h4>
+		  <p>One line description</p>
+		</div>
+		<div class="thumbnail">
+		  <h1 class="stats">9870</h1>
+		  <h4>TITLE</h4>
+		  <p>One line description</p>
+		</div>
 	  </div>
-    <div class="button">subscribe</div>
-  </section>
-	
-  <!-- Copyrights Section -->
-  <div class="copyright">&copy;2021 by Michael R Peck</div>
-</div>
+
+		<!-- Contact Section -->
+		<section class="footer_banner" id="contact">
+			<h2 class="contact_title">How To Contact Me</h2>
+			<div class="contact-text">
+				<p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+			</div>
+			<div class="contact-links">
+			<div class="contact-links">
+				<a href="#" class="contact-links linked-in"></a>
+			</div>
+			</div>
+			<div class="button">subscribe</div>
+		</section>
+
+	  <!-- Copyrights Section -->
+	  <div class="copyright">&copy;2021 by Michael R Peck</div>
+
+	</div>
 <!-- Main Container Ends -->
-	<script>
-		// JavaScript Document
-		var slideIndex = 1;
-		showSlides(slideIndex);
-
-		// Next/previous controls
-		function plusSlides(n) {
-		  showSlides(slideIndex += n);
-		}
-
-		// Thumbnail image controls
-		function currentSlide(n) {
-		  showSlides(slideIndex = n);
-		}
-
-		function showSlides(n) {
-		  var i;
-		  var slides = document.getElementsByClassName("mySlides");
-		  var dots = document.getElementsByClassName("demo");
-		  var captionText = document.getElementById("caption");
-		  if (n > slides.length) {slideIndex = 1}
-		  if (n < 1) {slideIndex = slides.length}
-		  for (i = 0; i < slides.length; i++) {
-			slides[i].style.display = "none";
-		  }
-		  for (i = 0; i < dots.length; i++) {
-			dots[i].className = dots[i].className.replace(" active", "");
-		  }
-		  slides[slideIndex-1].style.display = "block";
-		  dots[slideIndex-1].className += " active";
-		  captionText.innerHTML = dots[slideIndex-1].alt;
-		}
-	</script>
 </body>
 </html>
