@@ -5,13 +5,47 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Michael Peck</title>
+
 	<link href="css/portfolio.css" rel="stylesheet" type="text/css">
+	<link href="css/lightslider.css" rel="stylesheet" type="text/css">
+
+	<!--Java Script Links for GitHub-->
 	<script src="/js/image-slider.js" type="text/javascript" ></script>
 	<script src="/js/top-button.js" type="text/javascript"></script>
+
+	<!--JQuery-->
+	<script src="/js/jquery-3.1.1.js" type="text/javascript"></script>
+	<script src="/js/lightslider.js" type="text/javascript"></script>
 	
-<!--	local machine only-->
+
+	<!--local machine only-->
 	<script src="js/image-slider.js" type="text/javascript" ></script>
 	<script src="js/top-button.js" type="text/javascript"></script>
+
+	<!--JQuery-->
+	<script src="js/jquery-3.1.1.js" type="text/javascript"></script>
+	<script src="js/lightslider.js" type="text/javascript"></script>
+	
+	<script>
+        $(document).ready(function () {
+				$('#autoWidth1').lightSlider({
+					autoWidth: true,
+					loop: true,
+					onSliderLoad: function () {
+						$('#autoWidth1').removeClass('cS-hidden');
+					}
+				});
+			});
+			$(document).ready(function () {
+				$('#autoWidth2').lightSlider({
+					autoWidth: true,
+					loop: true,
+					onSliderLoad: function () {
+						$('#autoWidth2').removeClass('cS-hidden');
+					}
+				});
+			});
+	</script>
 	
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -19,6 +53,7 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
 </head>
 	
 <body>
@@ -69,63 +104,87 @@
 
 		<!-- Full-width images with number text -->
 		<!-- Container for the image gallery -->
-		<div class="image-container">
-
-			<!-- Full-width images with number text -->
-			<div class="mySlides active-img" style="display: block;">
-				<img src="images/screenshots/gam-207/Module_Three_Screen_1_Michael_Peck.PNG" style="width:100%">
-			</div>
-
-			<div class="mySlides active-img">
-				<img src="images/screenshots/gam-207/Module_Three_Screen_1_Michael_Peck.PNG" style="width:100%">
-			</div>
-
-			<div class="mySlides active-img">
-				<img src="images/screenshots/gam-207/Module_Three_Screen_1_Michael_Peck.PNG" style="width:100%">
-			</div>
-
-			<div class="mySlides active-img">
-				<img src="images/screenshots/gam-207/Module_Three_Screen_1_Michael_Peck.PNG" style="width:100%">
-			</div>
-
-			<div class="mySlides active-img">
-				<img src="images/screenshots/gam-207/Module_Three_Screen_1_Michael_Peck.PNG" style="width:100%">
-			</div>
-
-			<div class="mySlides active-img">
-				<img src="images/screenshots/gam-207/Module_Three_Screen_1_Michael_Peck.PNG" style="width:100%">
-			</div>
-
-			<!-- Next and previous buttons -->
-			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-			<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-			<!-- Image text -->
-			<div class="caption-container" >
-				<p id="caption" style="display: block;">&nbsp;</p>
-			</div>
-
-			<!-- Thumbnail images -->
-			<div class="row">
-				<div class="column">
-					<img class="demo cursor thumbnail-img" src="images/screenshots/gam-312/AISpline.PNG" onclick="currentSlide(1)" alt="The Woods">
-				</div>
-				<div class="column">
-					<img class="demo cursor thumbnail-img" src="images/demos/cleanYourRoom.png"  onclick="currentSlide(2)" alt="Cinque Terre">
-				</div>
-				<div class="column">
-					<img class="demo cursor thumbnail-img" src="images/screenshots/gam-312/BetaLevelPickupBP.PNG" onclick="currentSlide(3)" alt="Mountains and fjords">
-				</div>
-				<div class="column">
-					<img class="demo cursor thumbnail-img" src="img_lights.jpg" onclick="currentSlide(4)" alt="Northern Lights">
-				</div>
-				<div class="column">
-					<img class="demo cursor thumbnail-img" src="img_nature.jpg" onclick="currentSlide(5)" alt="Nature and sunrise">
-				</div>
-				<div class="column">
-					<img class="demo cursor thumbnail-img" src="img_snow.jpg" onclick="currentSlide(6)" alt="Snowy Mountains">
-				</div>
-			</div>
+ 		<div class="image-container">
+			<ul id="autoWidth1" class="cs-hidden">
+				<!--1--------------------------->
+				<li class="item-a">
+					<!-- sliderbox-->
+					<div class="box">
+						<p class="title">Project: The Ritual</p>
+							<!--model-->
+							<img class="picture" src="images/screenshots/gam-303/FinalLook.PNG">
+							<!--details panel-->
+						<div class="details">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						</div>
+					</div>
+				</li>
+				<!--2--------------------------->
+				<li class="item-a">
+					<!-- sliderbox-->
+					<div class="box">
+						<p class="title">Project: The Ritual</p>
+							<!--model-->
+							<img class="picture" src="images/demos/alternalien-250x250.png">
+							<!--details panel-->
+							<div class="details">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+							</div>
+					</div>
+				</li>
+				<!--3--------------------------->
+				<li class="item-a">
+					<!-- sliderbox-->
+					<div class="box">
+						<p class="title">Project: Raid on Santa's Village</p>
+							<!--model-->
+							<img class="picture" src="images/screenshots/gam-312/BetaLevelOverall.PNG">
+							<!--details panel-->
+							<div class="details">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+							</div>
+					</div>
+				</li>
+				<!--4--------------------------->
+				<li class="item-a">
+					<!-- sliderbox-->
+					<div class="box">
+						<p class="title">Project: Raid on Santa's Village</p>
+							<!--model-->
+							<img class="picture" src="images/screenshots/gam-312/HelloHUD.PNG">
+							<!--details panel-->
+							<div class="details">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+							</div>
+					</div>
+				</li>
+				<!--5--------------------------->
+				<li class="item-a">
+					<!-- sliderbox-->
+					<div class="box">
+						<p class="title">Project: Unlucky Hero</p>
+							<!--model-->
+							<img class="picture" src="images/screenshots/unity/mathblaster.PNG">
+							<!--details panel-->
+							<div class="details">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+							</div>
+					</div>
+				</li>
+				<!--6--------------------------->
+				<li class="item-a">
+					<!-- sliderbox-->
+					<div class="box">
+						<p class="title">Project: Unlucky Hero</p>
+							<!--model-->
+							<img class="picture" src="images/screenshots/gam-312/SphereMeshSuccess.PNG">
+							<!--details panel-->
+							<div class="details">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+							</div>
+					</div>
+				</li>
+			</ul>
 		</div>
 
 		<!-- Hero Section -->
@@ -141,29 +200,89 @@
 		</section>
 
 		<!--This will be a carousel for pro projects, videos, GIFs, and screenshots -->
-	  <!-- Stats Gallery Section -->
-	  <div class="gallery">
-		<div class="thumbnail">
-		  <h1 class="stats">1500</h1>
-		  <h4>TITLE</h4>
-		  <p>One line description</p>
-		</div>
-		<div class="thumbnail">
-		  <h1 class="stats">2300</h1>
-		  <h4>TITLE</h4>
-		  <p>One line description</p>
-		</div>
-		<div class="thumbnail">
-		  <h1 class="stats">7500</h1>
-		  <h4>TITLE</h4>
-		  <p>One line description</p>
-		</div>
-		<div class="thumbnail">
-		  <h1 class="stats">9870</h1>
-		  <h4>TITLE</h4>
-		  <p>One line description</p>
-		</div>
-	  </div>
+	 <!-- Container for the image gallery -->
+	 <div class="image-container">
+		<ul id="autoWidth2" class="cs-hidden">
+			<!--1--------------------------->
+			<li class="item-a">
+				<!-- sliderbox-->
+				<div class="box">
+					<p class="title">Project: The Ritual</p>
+						<!--model-->
+						<img class="picture" src="images/screenshots/gam-303/FinalLook.PNG">
+						<!--details panel-->
+					<div class="details">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					</div>
+				</div>
+			</li>
+			<!--2--------------------------->
+			<li class="item-a">
+				<!-- sliderbox-->
+				<div class="box">
+					<p class="title">Project: The Ritual</p>
+						<!--model-->
+						<img class="picture" src="images/demos/alternalien-250x250.png">
+						<!--details panel-->
+						<div class="details">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						</div>
+				</div>
+			</li>
+			<!--3--------------------------->
+			<li class="item-a">
+				<!-- sliderbox-->
+				<div class="box">
+					<p class="title">Project: Raid on Santa's Village</p>
+						<!--model-->
+						<img class="picture" src="images/screenshots/gam-312/BetaLevelOverall.PNG">
+						<!--details panel-->
+						<div class="details">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						</div>
+				</div>
+			</li>
+			<!--4--------------------------->
+			<li class="item-a">
+				<!-- sliderbox-->
+				<div class="box">
+					<p class="title">Project: Raid on Santa's Village</p>
+						<!--model-->
+						<img class="picture" src="images/screenshots/gam-312/HelloHUD.PNG">
+						<!--details panel-->
+						<div class="details">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						</div>
+				</div>
+			</li>
+			<!--5--------------------------->
+			<li class="item-a">
+				<!-- sliderbox-->
+				<div class="box">
+					<p class="title">Project: Unlucky Hero</p>
+						<!--model-->
+						<img class="picture" src="images/screenshots/unity/mathblaster.PNG">
+						<!--details panel-->
+						<div class="details">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						</div>
+				</div>
+			</li>
+			<!--6--------------------------->
+			<li class="item-a">
+				<!-- sliderbox-->
+				<div class="box">
+					<p class="title">Project: Unlucky Hero</p>
+						<!--model-->
+						<img class="picture" src="images/screenshots/gam-312/SphereMeshSuccess.PNG">
+						<!--details panel-->
+						<div class="details">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						</div>
+				</div>
+			</li>
+		</ul>
+	</div>
 
 		<!-- Contact Section -->
 		<section class="footer_banner" id="contact">
