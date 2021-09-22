@@ -335,9 +335,7 @@ details p{
 	letter-spacing: 2px;
 }
 /* Hide the images by default */
-.ritualSlides,
-.raidSlides,
-.heroSlides {
+.mySlides {
   display: none;
 }
 
@@ -365,7 +363,7 @@ details p{
 
 /* Position the "next button" to the right */
 .next {
-  right: 0;
+  right: 12.5%;
   border-radius: 3px 0 0 3px;
 }
 
@@ -412,12 +410,12 @@ details p{
 	background-color: #222629;
 }
 .modal-content{
-	position: relative;
 	background-color: #474B4F;
-	margin-top: auto;
+	margin-left: auto;
+	margin-right: auto;
 	padding-top: 0;
-	width: 90%;
-	max-width: 1200px;
+	width: 75%;
+	justify-content: center;
 }
 .close{
 	color:#6b6e70;
