@@ -128,9 +128,39 @@ ul li:hover a {
 	padding-left: 25px;
 	padding-right: 25px;
 	padding-top: 35px;
-	display: inline-block;
+	/* display: inline-block; */
 	background-color: #222629;
 	margin-top: 0px;
+	width: 50%;
+	float: left;
+}
+.about-pic {
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 35px;
+	/* display: inline-block; */
+	background-color: #222629;
+	margin-top: 0px;
+	width: 50%;
+	float: right;
+}
+.about_pro {
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 35px;
+	/* display: inline-block; */
+	background-color: #222629;
+	margin-top: 0px;
+	float: none;
+}
+.about_per {
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 35px;
+	/* display: inline-block; */
+	background-color: #222629;
+	margin-top: 0px;
+	float: none;
 }
 .thumbnail {
 	width: 25%;
@@ -157,6 +187,8 @@ ul li:hover a {
 	background-repeat: no-repeat;
 }
 .per-banner {
+	display: inline-block;
+	width: 100%;
 	background-color: #2D9AB7;
 	background-image: url("../images/parallax.png");
 	height: 400px;

@@ -85,10 +85,30 @@
 		</section>
 
 		<!-- About Me Section -->
-		<section class="about" id="about">
-			<h2 class="section_title">About Me</h2>
-			<p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-		</section>
+		<section id="about">
+			<div  class="about">
+				<h2 class="section_title">About Me</h2>
+				<p class="text_column">
+					My name is Michael Peck, and I am a video game programmer with experience across many disciplines, including gameplay mechanics, user interface, and artificial intelligence programming. I have years of experience in leading small-scale teams in an agile environment in multiple environments, 
+					including educational and professional.<br><br>
+					
+					Being a programmer with this wide variety of expertise allows me a myriad of opportunities to learn and grow in each area. Working on building a new gameplay
+					mechanic is one of the most fulfilling aspects of programming for me. Seeing the already endless array of possibilities and then creating your own gives you a feeling
+					of limitless potential is what drives me to explore these new ideas.<br><br>
+					
+					Working with a small indie game studio has given me the chance to experiment with all the aspects of programming, including extensive menu building, level 
+					sequencers, or cinematics, and developing an AI class that's smart enough to track the player in more ways than one. Working in a small team makes it easier to train the other
+					team members in the Scrum/Agile methodology and plan for our sprints more efficiently.<br><br>
+					
+					I am currently working as a Lead Programmer and Build Master with Belfrost Studios, but if you are looking for someone with experience in game programming and would like
+					to know more, you may contact me here or visit any of my links.</p>
+			</div>
+			<div class="about-pic">
+				<h2 class="section_title"></h2>
+				<p class="text_column">
+				</p>
+			</div>			
+		</section>		
 
 		<!--Remove this section when you add professional projects to the-->
 			<div style="display: none;">
@@ -99,7 +119,7 @@
 			</section>
 
 			<!-- About Me Section -->
-			<section class="about" id="pro-article">
+			<section class="about_pro" id="pro-article">
 				<h2 class="section_title">Professional Projects</h2>
 				<p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
 				<p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
@@ -183,13 +203,13 @@
 			</div>
 		</div>
 		<!-- Hero Section -->
-			<section class="per-banner" id="per">
-				<h2 class="home_header">Personal</h2>
-				<p class="tagline">List of best Personal projects completed and/or in progress</p>
-			</section>  
+		<section class="per-banner" id="per">
+			<h2 class="home_header">Personal</h2>
+			<p class="tagline">List of best Personal projects completed and/or in progress</p>
+		</section>  
 
 		<!-- About Me Section -->
-		<section class="about" id="per-article">
+		<section class="about_per" id="per-article">
 			<h2 class="section_title">Personal Projects</h2>
 			<p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
 		</section>
@@ -227,7 +247,7 @@
 				<div class="box">
 					<p class="title">Game Jam: Raid on Santa's Village</p>
 						<!--model-->
-						<img class="picture" src="images/demos/alternalien-250x250.png">
+						<img class="picture" src="images/demos/alternalien-250x250.png" onclick="openModal('raidModal','raidSlides', 'raidCaption');currentSlide(5)">
 						<!--details panel-->
 						<div class="details">
 							<p>
@@ -250,7 +270,7 @@
 				<div class="box">
 					<p class="title">Game Jam: Unlucky Hero</p>
 						<!--model-->
-						<img class="picture" src="images/screenshots/gam-312/BetaLevelOverall.PNG">
+						<img class="picture" src="images/screenshots/gam-312/BetaLevelOverall.PNG" onclick="openModal('heroModal','heroSlides', 'heroCaption');currentSlide(9)">
 						<!--details panel-->
 						<div class="details">
 							<p>
@@ -267,10 +287,33 @@
 						</div>
 				</div>
 			</li>
+			<!--4--------------------------->
+			<li class="item-a">
+				<!-- sliderbox-->
+				<div class="box">
+					<p class="title">Game Jam: Ujamaa Jam-A</p>
+						<!--model-->
+						<img class="picture" src="images/screenshots/gam-312/BetaLevelOverall.PNG" onclick="openModal('kwanzaaModal','kwanzaaSlides', 'kwanzaaCaption');currentSlide(13)">
+						<!--details panel-->
+						<div class="details">
+							<p>
+								<span class="sub-title">Primary Role:</span>
+								<span><br>All</span>
+								<br><br>
+								<span class="sub-title">Duties:</span>
+								<ul>
+									<li>Designed Level using pre-made assets</li><br>
+									<li>Designed and tested various UI mechanics to simulate trading of economic goods.</li><br>
+									<li>Maintained a stable build using GitHub and deployed on <a href="https://peck2703.itch.io/ujamaa-jam-a">itch.io.</a></li>
+								</ul>
+							</p>
+						</div>
+				</div>
+			</li>
 		</ul>
 	</div>
 
-	<!--Ritual Modal-->
+	<!-- Ritual Modal -->
 	<div id="ritualModal" class="modal">
 		<a class="close cursor" href="#autoWidth2" onclick="closeModal('ritualModal')">&times;</a>
 		<div class="modal-content">
@@ -296,19 +339,141 @@
 		</div>
 		<div class="row">
 			<div class="column">
-				<img class="cursor" src="images/screenshots/gam-312/SphereMeshSuccess.PNG" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+				<img class="cursor" src="images/screenshots/gam-312/SphereMeshSuccess.PNG" style="width:100%" onclick="currentSlide(1)" alt="">
 			</div>
 			<div class="column">
-				<img class="cursor" src="images/screenshots/gam-312/AIPatrolC++.PNG" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+				<img class="cursor" src="images/screenshots/gam-312/AIPatrolC++.PNG" style="width:100%" onclick="currentSlide(2)" alt="">
 			</div>
 			<div class="column">
-				<img class="cursor" src="images/screenshots/gam-312/BetaLevelOverall.PNG" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+				<img class="cursor" src="images/screenshots/gam-312/BetaLevelOverall.PNG" style="width:100%" onclick="currentSlide(3)" alt="">
 			</div>
 			<div class="column">
-				<img class="cursor" src="images/screenshots/gam-312/cppTimer.PNG" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+				<img class="cursor" src="images/screenshots/gam-312/cppTimer.PNG" style="width:100%" onclick="currentSlide(4)" alt="">
 			</div>
 		</div>
 	</div>
+
+	<!--Raid Modal-->
+	<div id="raidModal" class="modal">
+		<a class="close cursor" href="#autoWidth2" onclick="closeModal('raidModal')">&times;</a>
+		<div class="modal-content">
+	  
+		  <div class="raidSlides mySlides">
+			<img src="images/screenshots/gam-312/SphereMeshSuccess.PNG" style="width:100%">
+		  </div>
+	  
+		  <div class="raidSlides mySlides">
+			<img src="images/screenshots/gam-312/AIPatrolC++.PNG" style="width:100%">
+		  </div>
+	  
+		  <div class="raidSlides mySlides">
+			<img src="images/screenshots/gam-312/BetaLevelOverall.PNG" style="width:100%">
+		  </div>
+		  
+		  <div class="raidSlides mySlides">
+			<img src="images/screenshots/gam-312/cppTimer.PNG" style="width:100%">
+		  </div>
+		  
+		  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		<div class="row">
+			<div class="column">
+				<img class="cursor" src="images/screenshots/gam-312/SphereMeshSuccess.PNG" style="width:100%" onclick="currentSlide(5)" alt="">
+			</div>
+			<div class="column">
+				<img class="cursor" src="images/screenshots/gam-312/AIPatrolC++.PNG" style="width:100%" onclick="currentSlide(6)" alt="">
+			</div>
+			<div class="column">
+				<img class="cursor" src="images/screenshots/gam-312/BetaLevelOverall.PNG" style="width:100%" onclick="currentSlide(7)" alt="">
+			</div>
+			<div class="column">
+				<img class="cursor" src="images/screenshots/gam-312/cppTimer.PNG" style="width:100%" onclick="currentSlide(8)" alt="">
+			</div>
+		</div>
+	</div>
+
+
+	<!--Hero Modal-->
+	<div id="heroModal" class="modal">
+		<a class="close cursor" href="#autoWidth2" onclick="closeModal('heroModal')">&times;</a>
+		<div class="modal-content">
+	  
+		  <div class="heroSlides mySlides">
+			<img src="images/screenshots/gam-312/SphereMeshSuccess.PNG" style="width:100%">
+		  </div>
+	  
+		  <div class="heroSlides mySlides">
+			<img src="images/screenshots/gam-312/AIPatrolC++.PNG" style="width:100%">
+		  </div>
+	  
+		  <div class="heroSlides mySlides">
+			<img src="images/screenshots/gam-312/BetaLevelOverall.PNG" style="width:100%">
+		  </div>
+		  
+		  <div class="heroSlides mySlides">
+			<img src="images/screenshots/gam-312/cppTimer.PNG" style="width:100%">
+		  </div>
+		  
+		  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		<div class="row">
+			<div class="column">
+				<img class="cursor" src="images/screenshots/gam-312/SphereMeshSuccess.PNG" style="width:100%" onclick="currentSlide(9)" alt="">
+			</div>
+			<div class="column">
+				<img class="cursor" src="images/screenshots/gam-312/AIPatrolC++.PNG" style="width:100%" onclick="currentSlide(10)" alt="">
+			</div>
+			<div class="column">
+				<img class="cursor" src="images/screenshots/gam-312/BetaLevelOverall.PNG" style="width:100%" onclick="currentSlide(11)" alt="">
+			</div>
+			<div class="column">
+				<img class="cursor" src="images/screenshots/gam-312/cppTimer.PNG" style="width:100%" onclick="currentSlide(12)" alt="">
+			</div>
+		</div>
+	</div>
+
+	<!--Kwanzaa Modal-->
+	<div id="kwanzaaModal" class="modal">
+		<a class="close cursor" href="#autoWidth2" onclick="closeModal('kwanzaaModal')">&times;</a>
+		<div class="modal-content">
+	  
+		  <div class="kwanzaaSlides mySlides">
+			<img src="images/screenshots/gam-312/SphereMeshSuccess.PNG" style="width:100%">
+		  </div>
+	  
+		  <div class="kwanzaaSlides mySlides">
+			<img src="images/screenshots/gam-312/AIPatrolC++.PNG" style="width:100%">
+		  </div>
+	  
+		  <div class="kwanzaaSlides mySlides">
+			<img src="images/screenshots/gam-312/BetaLevelOverall.PNG" style="width:100%">
+		  </div>
+		  
+		  <div class="kwanzaaSlides mySlides">
+			<img src="images/screenshots/gam-312/cppTimer.PNG" style="width:100%">
+		  </div>
+		  
+		  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		<div class="row">
+			<div class="column">
+				<img class="cursor" src="images/screenshots/gam-312/SphereMeshSuccess.PNG" style="width:100%" onclick="currentSlide(1)" alt="">
+			</div>
+			<div class="column">
+				<img class="cursor" src="images/screenshots/gam-312/AIPatrolC++.PNG" style="width:100%" onclick="currentSlide(2)" alt="">
+			</div>
+			<div class="column">
+				<img class="cursor" src="images/screenshots/gam-312/BetaLevelOverall.PNG" style="width:100%" onclick="currentSlide(3)" alt="">
+			</div>
+			<div class="column">
+				<img class="cursor" src="images/screenshots/gam-312/cppTimer.PNG" style="width:100%" onclick="currentSlide(4)" alt="">
+			</div>
+		</div>
+	</div>
+
 
 		<!-- Contact Section -->
 		<section class="footer_banner" id="contact">
