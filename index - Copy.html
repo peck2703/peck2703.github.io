@@ -129,35 +129,30 @@
 			<!-- Full-width images with number text -->
 			<!-- Container for the image gallery -->
 			<div class="image-container">
-				
 				<ul id="autoWidth1" class="cs-hidden">
 					<!--1--------------------------->
-					
-						<li class="item-a" a href="game-jams/the-ritual.html">
-							<!-- sliderbox-->
-							<a href="game-jams/the-ritual.html">
-								<div class="box" a href="game-jams/the-ritual.html">
-									<p class="title">Game Jam: The Ritual</p>
-									<!--model-->
-									<img class="picture" src="images/screenshots/gam-303/FinalLook.PNG" a href="game-jams/the-ritual.html">
-									<!--details panel-->
-									<div class="details">
-										<p>
-											<span class="sub-title">Primary Role:</span>
-											<span><br>AI Programmer / Build Master</span>
-											<br><br>
-											<span class="sub-title">Duties:</span>
-											<ul>
-												<li>Designed and implemented enemy AI to chase player in Blackboard and Behavior Tree.</li><br>
-												<li>Designed and tested puzzle mechanics.</li><br>
-												<li>Maintained a stable build using GitHub and deployed on <a href="game-jams/the-ritual.html">itch.io.</a></li>
-											</ul>
-										</p>
-									</div>
-								</div>
-							</a>
-						</li>
-					
+					<li class="item-a">
+						<!-- sliderbox-->
+						<div class="box">
+							<p class="title">Game Jam: The Ritual</p>
+								<!--model-->
+								<img class="picture" src="images/screenshots/gam-303/FinalLook.PNG" >
+								<!--details panel-->
+							<div class="details">
+								<p>
+									<span class="sub-title">Primary Role:</span>
+									<span><br>AI Programmer / Build Master</span>
+									<br><br>
+									<span class="sub-title">Duties:</span>
+									<ul>
+										<li>Designed and implemented enemy AI to chase player in Blackboard and Behavior Tree.</li><br>
+										<li>Designed and tested puzzle mechanics.</li><br>
+										<li>Maintained a stable build using GitHub and deployed on <a href="https://peck2703.itch.io/the-ritual">itch.io.</a></li>
+									</ul>
+								</p>
+							</div>
+							
+					</li>
 					<!--2--------------------------->
 					<li class="item-a">
 						<!-- sliderbox-->
@@ -317,6 +312,168 @@
 			</li>
 		</ul>
 	</div>
+
+	<!-- Ritual Modal -->
+	<div id="ritualModal" class="modal">
+		<a class="close cursor" href="#autoWidth2" onclick="closeModal('ritualModal')">&times;</a>
+		<div class="modal-content">
+	  
+		  <div class="ritualSlides mySlides">
+			<img src="images/screenshots/gam-312/SphereMeshSuccess.PNG" style="width:100%">
+		  </div>
+	  
+		  <div class="ritualSlides mySlides">
+			<img src="images/screenshots/gam-312/AIPatrolC++.PNG" style="width:100%">
+		  </div>
+	  
+		  <div class="ritualSlides mySlides">
+			<img src="images/screenshots/gam-312/BetaLevelOverall.PNG" style="width:100%">
+		  </div>
+		  
+		  <div class="ritualSlides mySlides">
+			<img src="images/screenshots/gam-312/cppTimer.PNG" style="width:100%">
+		  </div>
+		  
+		  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		<div class="row">
+			<div class="column">
+				<img class="cursor" src="images/screenshots/gam-312/SphereMeshSuccess.PNG" style="width:100%" onclick="currentSlide(1)" alt="">
+			</div>
+			<div class="column">
+				<img class="cursor" src="images/screenshots/gam-312/AIPatrolC++.PNG" style="width:100%" onclick="currentSlide(2)" alt="">
+			</div>
+			<div class="column">
+				<img class="cursor" src="images/screenshots/gam-312/BetaLevelOverall.PNG" style="width:100%" onclick="currentSlide(3)" alt="">
+			</div>
+			<div class="column">
+				<img class="cursor" src="images/screenshots/gam-312/cppTimer.PNG" style="width:100%" onclick="currentSlide(4)" alt="">
+			</div>
+		</div>
+	</div>
+
+	<!--Raid Modal-->
+	<div id="raidModal" class="modal">
+		<a class="close cursor" href="#autoWidth2" onclick="closeModal('raidModal')">&times;</a>
+		<div class="modal-content">
+	  
+		  <div class="raidSlides mySlides">
+			<img src="images/screenshots/gam-312/SphereMeshSuccess.PNG" style="width:100%">
+		  </div>
+	  
+		  <div class="raidSlides mySlides">
+			<img src="images/screenshots/gam-312/AIPatrolC++.PNG" style="width:100%">
+		  </div>
+	  
+		  <div class="raidSlides mySlides">
+			<img src="images/screenshots/gam-312/BetaLevelOverall.PNG" style="width:100%">
+		  </div>
+		  
+		  <div class="raidSlides mySlides">
+			<img src="images/screenshots/gam-312/cppTimer.PNG" style="width:100%">
+		  </div>
+		  
+		  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		<div class="row">
+			<div class="column">
+				<img class="cursor" src="images/screenshots/gam-312/SphereMeshSuccess.PNG" style="width:100%" onclick="currentSlide(5)" alt="">
+			</div>
+			<div class="column">
+				<img class="cursor" src="images/screenshots/gam-312/AIPatrolC++.PNG" style="width:100%" onclick="currentSlide(6)" alt="">
+			</div>
+			<div class="column">
+				<img class="cursor" src="images/screenshots/gam-312/BetaLevelOverall.PNG" style="width:100%" onclick="currentSlide(7)" alt="">
+			</div>
+			<div class="column">
+				<img class="cursor" src="images/screenshots/gam-312/cppTimer.PNG" style="width:100%" onclick="currentSlide(8)" alt="">
+			</div>
+		</div>
+	</div>
+
+
+	<!--Hero Modal-->
+	<div id="heroModal" class="modal">
+		<a class="close cursor" href="#autoWidth2" onclick="closeModal('heroModal')">&times;</a>
+		<div class="modal-content">
+	  
+		  <div class="heroSlides mySlides">
+			<img src="images/screenshots/gam-312/SphereMeshSuccess.PNG" style="width:100%">
+		  </div>
+	  
+		  <div class="heroSlides mySlides">
+			<img src="images/screenshots/gam-312/AIPatrolC++.PNG" style="width:100%">
+		  </div>
+	  
+		  <div class="heroSlides mySlides">
+			<img src="images/screenshots/gam-312/BetaLevelOverall.PNG" style="width:100%">
+		  </div>
+		  
+		  <div class="heroSlides mySlides">
+			<img src="images/screenshots/gam-312/cppTimer.PNG" style="width:100%">
+		  </div>
+		  
+		  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		<div class="row">
+			<div class="column">
+				<img class="cursor" src="images/screenshots/gam-312/SphereMeshSuccess.PNG" style="width:100%" onclick="currentSlide(9)" alt="">
+			</div>
+			<div class="column">
+				<img class="cursor" src="images/screenshots/gam-312/AIPatrolC++.PNG" style="width:100%" onclick="currentSlide(10)" alt="">
+			</div>
+			<div class="column">
+				<img class="cursor" src="images/screenshots/gam-312/BetaLevelOverall.PNG" style="width:100%" onclick="currentSlide(11)" alt="">
+			</div>
+			<div class="column">
+				<img class="cursor" src="images/screenshots/gam-312/cppTimer.PNG" style="width:100%" onclick="currentSlide(12)" alt="">
+			</div>
+		</div>
+	</div>
+
+	<!--Kwanzaa Modal-->
+	<div id="kwanzaaModal" class="modal">
+		<a class="close cursor" href="#autoWidth2" onclick="closeModal('kwanzaaModal')">&times;</a>
+		<div class="modal-content">
+	  
+		  <div class="kwanzaaSlides mySlides">
+			<img src="images/screenshots/gam-312/SphereMeshSuccess.PNG" style="width:100%">
+		  </div>
+	  
+		  <div class="kwanzaaSlides mySlides">
+			<img src="images/screenshots/gam-312/AIPatrolC++.PNG" style="width:100%">
+		  </div>
+	  
+		  <div class="kwanzaaSlides mySlides">
+			<img src="images/screenshots/gam-312/BetaLevelOverall.PNG" style="width:100%">
+		  </div>
+		  
+		  <div class="kwanzaaSlides mySlides">
+			<img src="images/screenshots/gam-312/cppTimer.PNG" style="width:100%">
+		  </div>
+		  
+		  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		<div class="row">
+			<div class="column">
+				<img class="cursor" src="images/screenshots/gam-312/SphereMeshSuccess.PNG" style="width:100%" onclick="currentSlide(1)" alt="">
+			</div>
+			<div class="column">
+				<img class="cursor" src="images/screenshots/gam-312/AIPatrolC++.PNG" style="width:100%" onclick="currentSlide(2)" alt="">
+			</div>
+			<div class="column">
+				<img class="cursor" src="images/screenshots/gam-312/BetaLevelOverall.PNG" style="width:100%" onclick="currentSlide(3)" alt="">
+			</div>
+			<div class="column">
+				<img class="cursor" src="images/screenshots/gam-312/cppTimer.PNG" style="width:100%" onclick="currentSlide(4)" alt="">
+			</div>
+		</div>
+	</div>
+
 
 		<!-- Contact Section -->
 		<section class="footer_banner" id="contact">

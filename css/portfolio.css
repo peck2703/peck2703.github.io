@@ -73,6 +73,7 @@ ul li a {
 	color: #61892F;
 	text-decoration: none;
 	line-height: 1.4;
+	display: block;
 }
 ul li:hover a {
 	color: #86C232;
@@ -179,6 +180,8 @@ ul li:hover a {
 	background-repeat: no-repeat;
 }
 .pro-banner {
+	display: inline-block;
+	width: 100%;
 	background-color: #2D9AB7;
 	background-image: url("../images/parallax.png");
 	height: 400px;
@@ -522,6 +525,25 @@ img{
 #myBtn:hover {
   background-color: #474B4F; /* Add a dark-grey background on hover */
 }
+.game-gallery{
+	float: left;
+	width: 75%;
+	max-height: 400px;
+	position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Mobile */
 @media (max-width: 320px) {
@@ -651,6 +673,16 @@ nav ul li {
 	background-repeat: no-repeat;
 }
 }
+
+
+
+
+
+
+
+
+
+
 
 /* Small Tablets */
 @media (min-width: 321px)and (max-width: 767px) {
@@ -801,6 +833,15 @@ nav ul li {
 	background-repeat: no-repeat;
 }
 }
+
+
+
+
+
+
+
+
+
 /* Small Desktops */
 @media (min-width: 768px) and (max-width: 1096px) {
 .text_column {
