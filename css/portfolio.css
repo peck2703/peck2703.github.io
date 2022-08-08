@@ -73,10 +73,19 @@ ul li a {
 	color: #61892F;
 	text-decoration: none;
 	line-height: 1.4;
-	display: block;
+	display: inline-block;
 }
 ul li:hover a {
 	color: #86C232;
+}
+li.card-details{
+	color: #FFF;
+}
+a.card-image{
+	min-height: 250px;
+	min-width: 250px;
+	object-fit: cover;
+	color: #FFF;
 }
 .section_title {
 	color: #FFF;
@@ -230,6 +239,7 @@ ul li:hover a {
 footer {
 	background-color: #FFFFFF;
 	padding-bottom: 35px;
+	float: none;
 }
 .contact-text{
 	width: 70%;
@@ -394,9 +404,9 @@ details p{
 .prev,
 .next {
   cursor: pointer;
-  position: absolute;
-  top: 40%;
-  width: auto;
+  position:absolute;
+  top: 750px;
+  width: 25px;
   padding: 16px;
   margin-top: -50px;
   color: white;
@@ -409,7 +419,7 @@ details p{
 
 /* Position the "next button" to the right */
 .next {
-  right: 0;
+  left: 55%;
   border-radius: 3px 0 0 3px;
 }
 
@@ -494,7 +504,6 @@ details p{
 img{
 	max-height: 500px;
 	max-width: 100%;
-	margin: auto;
 	object-fit: fill;
 }
 .thumbnail-img{
@@ -524,25 +533,40 @@ img{
   background-color: #474B4F; /* Add a dark-grey background on hover */
 }
 .game-gallery{
-	float: left;
-	width: 75%;
+	padding: 20px;
+	width: 60%;
 	max-height: 400px;
-	position: relative;
+	float: left;
 }
 .game-information{
+	padding: 20px;
 	float: right;
-	width: 25%;
-	display: block;
+	width: 40%;
 }
-
-
-
-
-
-
-
-
-
+/* Slideshow container */
+.slideshow-container {
+	max-width: 1000px;
+	position: relative;
+  }
+  /* The dots/bullets/indicators */
+.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+	background-color: #717171;
+  }
+  @keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+  }
 
 
 
