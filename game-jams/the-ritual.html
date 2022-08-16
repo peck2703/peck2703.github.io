@@ -6,12 +6,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Michael Peck</title>
 
+	<link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
 	<link href="../css/portfolio.css" rel="stylesheet" type="text/css">
 	<link href="../css/lightslider.css" rel="stylesheet" type="text/css">
+	
 
 	<!--Java Script Links for GitHub-->
 	<script src="../js/model-lightbox.js" type="text/javascript"></script>
-	<script src="../js/image-slider.js" type="text/javascript" ></script>
+	<script src="../js/image-slider.js" type="text/javascript"></script>
 	<script src="../js/top-button.js" type="text/javascript"></script>
 
 	<!--JQuery-->
@@ -21,7 +23,7 @@
 
 	<!--local machine only-->
 	<script src="../js/model-lightbox.js" type="text/javascript"></script>
-	<script src="../js/image-slider.js" type="text/javascript" ></script>
+	<script src="../js/image-slider.js" type="text/javascript"></script>
 	<script src="../js/top-button.js" type="text/javascript"></script>
 
 	<!--JQuery-->
@@ -62,15 +64,15 @@
 	<!-- Main Container -->
 	<div class="container">
 	  <!-- Navigation -->
-	  <header> <a href="">
+	  <header>
 		<h4 class="logo"></h4>
 		</a>
 		<nav>
 		  <ul>
-			<li><a href="#about">ABOUT ME</a></li>
-			  <li><a href="#pro">PROFESSIONAL PROJECTS</a></li>
-			  <li><a href="#per">PERSONAL PROJECTS</a></li>
-			<li> <a href="#contact">CONTACT</a></li>
+			<li><a href="../index.html#about">ABOUT ME</a></li>
+			  <li><a href="../index.html#pro">PROFESSIONAL PROJECTS</a></li>
+			  <li><a href="../index.html#per">PERSONAL PROJECTS</a></li>
+			<li> <a href="../index.html#contact">CONTACT</a></li>
 		  </ul>
 		</nav>
 	  </header>
@@ -85,81 +87,97 @@
 		</section>
 
 		<!-- About Me Section -->
-		<section>
+		<section class="container">
 			<!-- Slideshow container -->
 			<div class="game-gallery">
-
-				<!-- Full-width images with number and caption text -->
-				<div class="mySlides fade" style="display: block;">
+			
+				<!-- Full-width images with number text -->
+				<div class="mySlides" style="display: block;">
 					<div class="numbertext">1 / 4</div>
-					<img src="../images/demos/ritual-images/Main_Menu.PNG" style="width:100%">
-					<div class="text">Caption Text</div>
-				</div>
-			
-				<div class="mySlides fade">
-					<div class="numbertext">2 / 4</div>
-					<img src="../images/demos/ritual-images/Cultist.PNG" style="width:100%">
-					<div class="text">Caption Two</div>
-				</div>
-			
-				<div class="mySlides fade">
-					<div class="numbertext">3 / 4</div>
-					<img src="../images/demos/ritual-images/Coffin_FX.PNG" style="width:100%">
-					<div class="text">Caption Three</div>
+					<img src="../images/demos/ritual-images/Main_Menu.PNG">
 				</div>
 
-				<div class="mySlides fade">
+				<div class="mySlides">
+					<div class="numbertext">2 / 4</div>
+					<img src="../images/demos/ritual-images/Coffin_FX.PNG">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">3 / 4</div>
+					<img src="../images/demos/ritual-images/Cultist.PNG">
+				</div>
+
+				<div class="mySlides">
 					<div class="numbertext">4 / 4</div>
-					<img src="../images/demos/ritual-images/Demon_BT.PNG" style="width:100%">
-					<div class="text">Caption Three</div>
+					<img src="../images/demos/ritual-images/Demon_BT.PNG">
 				</div>
 
 				<!-- Next and previous buttons -->
 				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 				<a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-				<!-- The dots/circles -->
-				<div style="text-align:center">
-					<span class="dot" onclick="currentSlide(1)"></span>
-					<span class="dot" onclick="currentSlide(2)"></span>
-					<span class="dot" onclick="currentSlide(3)"></span>
-					<span class="dot" onclick="currentSlide(4)"></span>
+				<br>
+				<!-- Thumbnail images -->
+				<div class="row">
+					<div class="column">
+					<img class="demo cursor" src="../images/demos/ritual-images/Main_Menu.PNG" onclick="currentSlide(1)" alt="Main Menu for The Ritual">
+					</div>
+					<div class="column">
+					<img class="demo cursor" src="../images/demos/ritual-images/Coffin_FX.PNG" onclick="currentSlide(2)" alt="Cinque Terre">
+					</div>
+					<div class="column">
+					<img class="demo cursor" src="../images/demos/ritual-images/Cultist.PNG" onclick="currentSlide(3)" alt="Mountains and fjords">
+					</div>
+					<div class="column">
+					<img class="demo cursor" src="../images/demos/ritual-images/Demon_BT.PNG" onclick="currentSlide(4)" alt="Northern Lights">
+					</div>
 				</div>
 			</div>
-			<br>
-		
+			
 			<div class="game-information">
-				<span class="sub-title">Primary Role:</span>
-					<span><br>AI Programmer / Build Master</span>
-					<br><br>
+				<span class="sub-title">Primary Role: AI Programmer</span><br>
+					<span>
+						<span class="sub-title">Other Roles:</span>
+						<br>
+						<ul>
+							<li>Build Master</li><br>
+							<li>Gameplay Programmer</li>
+						</ul>
+					</span>
 					<span class="sub-title">Duties:</span>
+					<br>
 					<ul>
-						<li>Designed and implemented enemy AI to chase player in Blackboard and Behavior Tree.</li><br>
-						<li>Designed and tested puzzle mechanics.</li><br>
-						<li>Maintained a stable build using GitHub and deployed on <a href="game-jams/the-ritual.html">itch.io.</a></li>
+						<li>Designed and implemented simple enemy AI to chase player through teleportation using Unreal Engine 4 Blackboard and Behavior Tree.</li><br>
+						<li>Designed and tested puzzle mechanics, like hidden switches and disappearing floors.</li><br>
+						<li>Educated and trained new users on proper use of Source Control tools like Git, GitHub Desktop to ensure protection of branches and source code.</li><br>
+						<li>Maintained a stable build using GitHub Desktop and deployed final release version on <a href="game-jams/the-ritual.html">itch.io.</a></li>
 					</ul>
+					<a href="https://github.com/4rron/2021holidayjam">
+						<img src="../images/icons/GitHub-Mark-64px.png">
+					</a>
+					<a href="https://github.com/4rron/2021holidayjam" style="height:64px; width:64px;">
+						<img src="../images/icons/itch-io.png" style="height: 80px; width:80px;">
+					</a>
+					
 			</div>
-			<div style="float: left;">
-				<h2 class="section_title">About Me</h2>
-				<p class="text_column">
-					My name is Michael Peck, and I am a video game programmer with experience across many disciplines, including gameplay mechanics, user interface, and artificial intelligence programming. I have years of experience in leading small-scale teams in an agile environment in multiple environments, 
-					including educational and professional.<br><br>
-					
-					Being a programmer with this wide variety of expertise allows me a myriad of opportunities to learn and grow in each area. Working on building a new gameplay
-					mechanic is one of the most fulfilling aspects of programming for me. Seeing the already endless array of possibilities and then creating your own gives you a feeling
-					of limitless potential is what drives me to explore these new ideas.<br><br>
-					
-					Working with a small indie game studio has given me the chance to experiment with all the aspects of programming, including extensive menu building, level 
-					sequencers, or cinematics, and developing an AI class that's smart enough to track the player in more ways than one. Working in a small team makes it easier to train the other
-					team members in the Scrum/Agile methodology and plan for our sprints more efficiently.<br><br>
-					
-					I am currently working as a Lead Programmer and Build Master with Belfrost Studios, but if you are looking for someone with experience in game programming and would like
-					to know more, you may contact me here or visit any of my links.</p>
+			<div class="game-summary">
+				<h2 class="section_title">About The Ritual</h2>
+				<p class="game-text">
+					This game was a submission to the BitBridge Halloween Game Jam that was based out of Pittsburgh, PA. All of the participants in this project were all students
+					and alumni of my alma mater, Southern New Hampshire University, including one of our professors. The subjects for this game jam was either ritual or harvest, so
+					we chose to go with the ritual keyword, literally. The story behind the game is that you are a streamer who studies ancient and abandoned chapels and monasteries, 
+					but discover that this one is still being used to hold satanic rituals and your life is dependent on whether or not you can  subvert the ritual by taking out the cultists.
+				</p>
+				<p class="game-text" style="font-size: 20pt; font-weight:400;">
+					To your dismay, the demon spawns anyways and chases you, can you make it out of the monastary alive?
+				</p>
 			</div>			
 		</section>
 	</div>
 
 	<div>
+		
+
 		<!-- Contact Section -->
 		<section class="footer_banner" id="contact">
 			<h2 class="contact_title">How To Contact Me</h2>
