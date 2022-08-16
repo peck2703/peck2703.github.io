@@ -23,7 +23,7 @@ br{
 }
 /* Container */
 .container {
-	width: 90%;
+	width: 95%;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -71,7 +71,7 @@ nav ul li {
 ul li a {
 	color: #61892F;
 	text-decoration: none;
-	line-height: 2;
+	line-height: 1.5;
 	display: inline-block;
 }
 ul li:hover a {
@@ -107,6 +107,16 @@ a.card-image{
 	letter-spacing: 4px;
 	padding-top: 150px;
 	padding-bottom: 50px;
+	font-size: 48px;
+}
+a.external-links{
+	height: 80px;
+	width: 80px;
+	position: relative;
+  	display: inline-block;
+}
+img.external-links{
+	object-fit: fill;
 }
 /* Hero Section */
 .home {
@@ -179,7 +189,6 @@ a.card-image{
 /* Parallax Section */
 .home-banner {
 	background-color: #2D9AB7;
-	background-image: url("../images/parallax.png");
 	height: 400px;
 	background-attachment: fixed;
 	background-size: cover;
@@ -436,7 +445,7 @@ details p{
   }
 /* Position the "next button" to the right */
 .prev {
-	left: 12%;
+	left: 7%;
 	border-radius: 3px 0 0 3px;
   }
   .full-spacing{
@@ -464,6 +473,9 @@ details p{
 .row > .column{
 	padding: 2px;
 }
+.row > .column-5{
+	padding: 2px;
+}
 .row:after {
   content: "";
   display: table;
@@ -475,6 +487,18 @@ details p{
 	float: left;
 	width: 25%;
 	height: 150px;
+}
+.column-5{
+	float: left;
+	width: 20%;
+	height: 100%;
+	object-fit: fill;
+	align-items: center;
+	vertical-align: top;
+}
+.img-column{
+	height: 150px;
+	width: 20%;
 }
 .modal{
 	display: none;
@@ -513,6 +537,8 @@ details p{
 /* Add a transparency effect for thumnbail images */
 .demo {
   opacity: 0.6;
+  width: auto;
+  height: auto;
 }
 
 .active,
@@ -552,9 +578,10 @@ img{
   background-color: #474B4F; /* Add a dark-grey background on hover */
 }
 .game-gallery{
-	padding: 10px;
+	padding-top: 10px;
 	width: 60%;
 	float: left;
+	align-items: center;
 }
 .game-information{
 	float: right;
@@ -723,9 +750,9 @@ nav ul li {
 	background-color: #2D9AB7;
 	background-image: url("../images/parallax.png");
 	height: 400px;
-	background-attachment: relative;
-	background-size: cover;
+	background-attachment: fixed;
 	background-repeat: no-repeat;
+	padding-top: 12px;
 }
 .pro-banner {
 	background-color: #2D9AB7;
