@@ -1,5 +1,5 @@
 ---
-layout: wide
+layout: single
 title: "My Portfolio Projects"
 permalink: /portfolio/
 toc: false
