@@ -3,6 +3,6 @@ main:
   - title: "Home"
     url: /
   - title: "My Work"
-    url: /work/
-  - title: "Contact"
-    url: /contact/
+    url: /portfolio
+  - title: "Contact Me"
+    url: /contact

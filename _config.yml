@@ -16,7 +16,7 @@ plugins:
 author:
   name   : "Michael R Peck Jr"
   avatar : "https://github.com"
-  bio    : "Aspiring Full-Stack Developer. Welcome to my Portfolio."
+  bio    : "Aspiring Full-Stack Developer. Welcome to my Portfolio.<br><br>🎓 '26 B.S. Computer Science (SE)<br>🎓 '19 B.S. Game Programming & Dev"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
@@ -24,9 +24,12 @@ author:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://linkedin.com"
-    - label: "Website / Blog"
-      icon: "fas fa-fw fa-link"
-      url: "https://your-custom-site.com"
+    - label: "Facebook"
+      icon: "fas fa-fw fa-Facebook"
+      url: "https://www.facebook.com/Onewingedangel2703"
+    - label: "itch.io - Games"
+      icon: "fas fa-fw fa-itch"
+      url:  "https://peck2703.itch.io/"
 
 # Core settings for this specific theme
 locale: "en-US"

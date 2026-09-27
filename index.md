@@ -9,9 +9,13 @@ Welcome to my ePortfolio page. This site will focus on my Computer Science work 
 
 ---
 
-## Credentials
-'26' - B.S. Computer Science w/concentration in Software Engineering - Southern New Hampshire University (*Magna Cum Laude*)
-'19 - B.S. Game Programming & Development - Southern New Hampshire University 
+### Education & Credentials
+* **Class of 2026** - B.S. Computer Science
+  * *Contentration* Software Engineering
+  * *Institution* Southern New Hampshire University
+  * *Honors* **Magna Cum Laude**<br>
+* **Class of 2019** - B.S. Game Programming & Development
+  * *Institution* Southern New Hampshire University
 
 ---
 
@@ -21,5 +25,14 @@ Welcome to my ePortfolio page. This site will focus on my Computer Science work 
 * **Problem Solving:** Tracking down background infrastructure glitches (like duplicate build artifacts!).
 * **Building API Callbacks** Building and connecting API callback functions to an external database (MongoDB).
 
-### Connect with M
+### Core Skills/Languages
+* **Git/GitHub** - 12 Years
+* **Project Management** - 12 Years
+* **C++** - 8 Years
+* **Java** - 4 Years
+* **JavaScript/TypeScript** - 1 Year
+* **NoSQL** - 1 Year
+* **JUnit** - 1 Year
+
+### Connect with Me
 Feel free to browse my social media profiles over in the left sidebar, or check out my recent projects using the navigation links at the top of the page!
