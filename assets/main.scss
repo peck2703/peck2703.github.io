@@ -9,96 +9,77 @@
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
 
-// Global Structural Responsive Architecture
+// Clear out the default right sidebar space when toc is false
 @media (min-width: 64em) {
-  // Widen the core viewport grid boundaries out to screen edges
-  #main {
-    max-width: 95% !important;
-    padding-left: 2% !important;
-    padding-right: 2% !important;
-  }
-
-  // --- PAGE TYPE A: ---
-  // Keeps the main layout set at 80% to give the right sidebar a crisp 18% footprint
-  .archive, .page {
-    width: 80% !important; 
-    padding-right: 20px !important;
-  }
-  .sidebar.right {
-    width: 18% !important;
-    position: -webkit-sticky !important;
-    position: sticky !important;
-    top: 2em !important; 
-    z-index: 10;
+  // If the page does not have a table of contents active, break open the narrow margins!
+  .page:not(.has-toc), .archive:not(.has-toc) {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-right: 0 !important;
   }
 }
 
-@media (min-width: 64em) {
-  // --- PAGE TYPE B: Pages WITHOUT a Right Sidebar ---
-  // If the right sidebar is physically empty, force the page block to snap out to full width!
-  .sidebar.right:empty {
-    display: none !important;
-  }
-
-   // If the right sidebar is missing or hidden, force the content container to stretch to 100%
-  .sidebar.right:empty ~ .page,
-  .sidebar.right:empty ~ .archive,
-  .page, .archive {
-    &:last-child, &:only-of-type {
-      width: 100% !important;
-      padding-right: 0 !important;
-    }
-  }
-}
-
-
-// Premium Horizontal Scroll Slider Engine
-.horizontal-scroll-track {
+// Absolute Horizontal Slider Override Engine
+.portfolio-slider-container {
   width: 100% !important;
-  margin-top: 25px;
-  clear: both;
-  
+  display: block !important;
+  clear: both !important;
+  margin: 30px 0 !important;
+  overflow: hidden !important;
+
   .feature__wrapper {
     display: flex !important;
     flex-direction: row !important;
     flex-wrap: nowrap !important;
-    overflow-x: auto !important;
+    overflow-x: scroll !important;
     scroll-snap-type: x mandatory !important;
-    -webkit-overflow-scrolling: touch;
-    gap: 24px !important; 
+    -webkit-overflow-scrolling: touch !important;
+    gap: 24px !important;
     padding-bottom: 20px !important;
+    margin: 0 !important;
+    width: 100% !important;
 
-    // Custom modern scrollbar design
+    // Remove default theme grid floats completely
+    &::before, &::after {
+      display: none !important;
+    }
+
+    // Sleek scrollbar styling
     &::-webkit-scrollbar {
       height: 8px;
     }
     &::-webkit-scrollbar-track {
-      background: #f1f1f1;
+      background: #e4e4e4;
       border-radius: 4px;
     }
     &::-webkit-scrollbar-thumb {
-      background: #888;
+      background: #a0a0a0;
       border-radius: 4px;
-    }
-    &::-webkit-scrollbar-thumb:hover {
-      background: #555;
     }
   }
 
-  // Forces exactly TWO clean cards to fill the expanded viewport layout area side-by-side
+  // FORCE each project card to occupy EXACTLY half the screen size minus the gap fraction
   .feature__item {
-    flex: 0 0 calc(50% - 12px) !important; 
+    flex: 0 0 calc(50% - 12px) !important;
     min-width: calc(50% - 12px) !important;
     max-width: calc(50% - 12px) !important;
+    float: none !important; // Breaks theme column float grids
+    margin: 0 !important;
     scroll-snap-align: start !important;
-    margin-bottom: 0 !important;
     box-sizing: border-box !important;
+
+    // Make sure card images fill their new wide cards perfectly
+    .feature__item-teaser {
+      width: 100% !important;
+      max-height: 250px !important;
+      object-fit: cover !important;
+    }
   }
 }
 
-// Mobile compatibility fallback: Stacks to show exactly 1 full card at a time on phones
+// Responsive mobile adjustment: Scales to 1 full card width on small phones
 @media (max-width: 48em) {
-  .horizontal-scroll-track .feature__item {
+  .portfolio-slider-container .feature__item {
     flex: 0 0 100% !important;
     min-width: 100% !important;
     max-width: 100% !important;
