@@ -15,9 +15,21 @@ $right-sidebar-width-wide:   220px !default;
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
 
-@media (min-width: 64em) {
-  .archive, .page {
-    padding-right: 1% !important; // Shrinks padding gaps
+#main {
+    max-width: 95% !important;
+    padding-left: 2% !important;
+    padding-right: 2% !important;
+  }
+
+  // Force the central text workspace to claim more horizontal room
+  .initial-content {
+    width: 62% !important; // Widened up from the standard default narrow footprint
+  }
+
+  // Shrink the right Table of Contents (sidebar) column so it is tight and neat
+  .sidebar.right {
+    width: 15% !important;  // Shrunk down to make space for the center content
+    margin-left: 1% !important;
   }
 }
 

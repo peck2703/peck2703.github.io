@@ -1,9 +1,13 @@
 ---
 layout: single
 title: Getting to Know Me
+
+toc:  true
+toc_label:  "On This Page"
+toc_icon:  "cog"
 ---
 
-# Hello I am an aspiring Full-Stack Developer!
+### Hello I am an aspiring Full-Stack Developer!
 
 Welcome to my ePortfolio page. This site will focus on my Computer Science work and my related achievements. If you navigated here but were looking for my indie game development work, please visit my other ePortfolio page [here](), other links related to game-related work will be located in the sidebar.
 
