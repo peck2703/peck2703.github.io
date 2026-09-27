@@ -15,7 +15,9 @@ $right-sidebar-width-wide:   220px !default;
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
 
-#main {
+@media (min-width: 64em) {
+  // Widen the entire page body frame to stretch further out to screen edges
+  #main {
     max-width: 95% !important;
     padding-left: 2% !important;
     padding-right: 2% !important;
