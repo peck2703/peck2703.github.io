@@ -1,0 +1,25 @@
+---
+# The two lines of dashes at the top are mandatory! 
+# This tells Jekyll to process this file as a style engine.
+---
+
+// Load your active skin color scheme first
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+
+// Adjust layout variables BEFORE pulling the main layout code
+// (Default theme widths are usually around 250px-300px. We scale them down to widen the center)
+$right-sidebar-width-narrow: 160px !default; 
+$right-sidebar-width:        200px !default; 
+$right-sidebar-width-wide:   220px !default; 
+
+// Import the rest of the core theme architecture
+@import "minimal-mistakes";
+
+// Custom CSS to push the structural containers even wider
+@media (min-width: 64em) {
+  #main {
+    max-width: 90%; // Tells the overall page to stretch further out to the screen edges
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+}

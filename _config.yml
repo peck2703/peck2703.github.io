@@ -25,10 +25,10 @@ author:
       icon: "fab fa-fw fa-linkedin"
       url: "https://linkedin.com"
     - label: "Facebook"
-      icon: "fas fa-fw fa-Facebook"
+      icon: "fas fa-fw fa-facebook"
       url: "https://www.facebook.com/Onewingedangel2703"
     - label: "itch.io - Games"
-      icon: "fas fa-fw fa-itch"
+      icon: "fas fa-fw fa-gamepad"
       url:  "https://peck2703.itch.io/"
 
 # Core settings for this specific theme
