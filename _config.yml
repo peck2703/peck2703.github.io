@@ -1,5 +1,26 @@
-title: Michael R Peck Jr - Portfolio
+title: "Michael R Peck Jr - Portfolio"
+name: "Michael R Peck Jr"
+description: "My Professional ePortfolio"
 remote_theme: mmistakes/minimal-mistakes
+site_author: "Michael R Peck Jr"
+
+# Plugins necessary for remote theme
+plugins:
+  - jekyll-include-cache
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+
+# Sidebar configuration
+author:
+  name   : "Michael R Peck Jr"
+  avatar : "https://github.com"
+  bio    : "Aspiring Full-Stack Developer. Welcome to my Portfolio."
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/peck2703"
 
 # Core settings for this specific theme
 locale: "en-US"
