@@ -57,4 +57,6 @@ This initial phase establishes baseline code critiques, detailing software limit
 ### Technical Enhancements & Implementations
 The following collection highlights executed optimizations focused on algorithmic complexity, database scalability, and decoupled full-stack architectural design patterns.
 
-{% include feature_row id="feature_row_technical" %}
+<div class="portfolio-slider-container">
+  {% include feature_row id="feature_row_technical" %}
+</div>
