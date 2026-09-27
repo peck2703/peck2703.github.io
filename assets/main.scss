@@ -32,6 +32,10 @@ $right-sidebar-width-wide:   220px !default;
   .sidebar.right {
     width: 15% !important;  // Shrunk down to make space for the center content
     margin-left: 1% !important;
+    position: -webkit-sticky !important;
+    position: sticky !important;
+    top: 2em !important; // Keeps it locked 2em away from the top viewport when scrolling
+    z-index: 10;
   }
 }
 
