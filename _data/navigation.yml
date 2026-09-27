@@ -1,0 +1,8 @@
+# Top Navigation Bar Links
+main:
+  - title: "Home"
+    url: /
+  - title: "My Work"
+    url: /work/
+  - title: "Contact"
+    url: /contact/

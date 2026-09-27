@@ -21,6 +21,12 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/peck2703"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com"
+    - label: "Website / Blog"
+      icon: "fas fa-fw fa-link"
+      url: "https://your-custom-site.com"
 
 # Core settings for this specific theme
 locale: "en-US"
@@ -30,3 +36,4 @@ defaults:
     values:
       layout: "single" # Tells the theme to use its default page wrapper
       author_profile: true # Puts your profile card on the sidebar
+site_navigation:  main
