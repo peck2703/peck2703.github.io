@@ -1,75 +1,61 @@
 ---
 layout: single
-title: My Portfolio Projects
-permalink:  /portfolio
-toc:  true
-toc_label:  "Project Index"
+title: "My Portfolio Projects"
+permalink: /portfolio/
+toc: true
+toc_label: "Project Index"
 
-# --- PROJECT GRID ONE: Code Review ---
+# --- GRID ONE: Code Review (Kept Separate) ---
 feature_row_cr:
   - image_path: "https://placeholder.com"
     alt: "(Video) Code Self-Review"
     title: "Code Self-Review"
-    excerpt: "A video where I review existing code for three projects and discuss plans for enhancement."
+    excerpt: "A video walkthrough where I systematically review existing code architectures across three projects and discuss technical pathways for future enhancement."
     url: "https://youtu.be/QK3JBomKwV8"
     btn_label: "View on YouTube"
-    btn_class: "btn--primary"
+    btn_class: "btn--danger" # Changed to red to visually match YouTube!
 
-
-# --- PROJECT GRID TWO: Software Engineering ---
-feature_row_se:
+# --- GRID TWO: Unified Technical Artifact Showcase ---
+feature_row_technical:
   - image_path: "https://placeholder.com"
     alt: "(Project) Software Engineering & Design"
-    title: "Enhancement: Software Engineering & Design"
-    excerpt: "Employed enhancements to a previous Full-Stack Development project, where static data was replaced with additional API calls and routing calls."
+    title: "Software Engineering & Design"
+    excerpt: "Employed deep architectural enhancements to a previous Full-Stack Development project, successfully replacing static local data frameworks with dynamic, real-time external API endpoints and robust routing layers."
     url: "https://github.com"
-    btn_label: "View Project on GitHub"
+    btn_label: "View on GitHub"
     btn_class: "btn--primary"
 
-# --- PROJECT GRID Three: Data Structures & Algorithms ---
-feature_row_se:
   - image_path: "https://placeholder.com"
     alt: "(Project) Data Structures & Algorithms"
-    title: "Enhancement: Data Structures & Algorithms"
-    excerpt: "Replaced Binary Search Tree with a B+ Tree and employed a Trie prediction algorithm."
+    title: "Data Structures & Algorithms"
+    excerpt: "Optimized complex algorithmic complexity models by refactoring a traditional Binary Search Tree structure into a high-performance B+ Tree, coupled with an integrated Trie text-prediction engine."
     url: "https://github.com"
-    btn_label: "View Project on GitHub"
+    btn_label: "View on GitHub"
     btn_class: "btn--primary"
 
-# --- PROJECT GRID Four: Databases ---
-feature_row_se:
   - image_path: "https://placeholder.com"
     alt: "(Project) Databases"
-    title: "Enhancement: Databases"
-    excerpt: "Modified a Mobile application to use an external Database and converted local database to a cached copy."
+    title: "Databases"
+    excerpt: "Engineered scalability into a native mobile application environment by transitioning local device datasets over to a secure external cloud database model, complete with a local cached synchronization backup layer."
     url: "https://github.com"
-    btn_label: "View Project on GitHub"
+    btn_label: "View on GitHub"
     btn_class: "btn--primary"
-
 ---
 
 # Selected Works
 
-Welcome to my portfolio showcase. Here you will find highlights spanning my background in various categories across Software Engineering.
+Welcome to my portfolio showcase. Here you will find structural project highlights spanning software engineering, system architecture, and media analysis.
 
 ---
-### Code Self-Review
-This project focuses on self-reviews, coding analysis and enhancement planning.
+
+### Planning & Code Analysis
+This initial phase establishes baseline code critiques, detailing software limitations and identifying target technical areas slated for core enhancements.
 
 {% include feature_row id="feature_row_cr" %}
 
-### Software Engineering & Design
-These projects focus on system efficiency, clean codebase architecture, and robust automation pipelines.
-
-{% include feature_row id="feature_row_se" %}
-
-### Data Structures & Algorithms
-These projects focus on system efficiency, clean codebase architecture, and robust automation pipelines.
-
-{% include feature_row id="feature_row_se" %}
-
-### Databases
-These projects focus on system efficiency, clean codebase architecture, and robust automation pipelines.
-
-{% include feature_row id="feature_row_se" %}
 ---
+
+### Technical Enhancements & Implementations
+The following collection highlights executed optimizations focused on algorithmic complexity, database scalability, and decoupled full-stack architectural design patterns.
+
+{% include feature_row id="feature_row_technical" %}
