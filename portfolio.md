@@ -27,7 +27,7 @@ feature_row_se:
     btn_class: "btn--primary"
 
 # --- PROJECT GRID Three: Data Structures & Algorithms ---
-feature_row_dsa:
+feature_row_se:
   - image_path: "https://placeholder.com"
     alt: "(Project) Data Structures & Algorithms"
     title: "Enhancement: Data Structures & Algorithms"
@@ -37,7 +37,7 @@ feature_row_dsa:
     btn_class: "btn--primary"
 
 # --- PROJECT GRID Four: Databases ---
-feature_row_db:
+feature_row_se:
   - image_path: "https://placeholder.com"
     alt: "(Project) Databases"
     title: "Enhancement: Databases"
@@ -56,7 +56,7 @@ Welcome to my portfolio showcase. Here you will find highlights spanning my back
 ### Code Self-Review
 This project focuses on self-reviews, coding analysis and enhancement planning.
 
-{% include feature_row id="feature_row_se" %}
+{% include feature_row id="feature_row_cr" %}
 
 ### Software Engineering & Design
 These projects focus on system efficiency, clean codebase architecture, and robust automation pipelines.
@@ -66,10 +66,10 @@ These projects focus on system efficiency, clean codebase architecture, and robu
 ### Data Structures & Algorithms
 These projects focus on system efficiency, clean codebase architecture, and robust automation pipelines.
 
-{% include feature_row id="feature_row_dsa" %}
+{% include feature_row id="feature_row_se" %}
 
 ### Databases
 These projects focus on system efficiency, clean codebase architecture, and robust automation pipelines.
 
-{% include feature_row id="feature_row_ds" %}
+{% include feature_row id="feature_row_se" %}
 ---
