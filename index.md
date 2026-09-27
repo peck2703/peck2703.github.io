@@ -1,7 +1,6 @@
 ---
-layout: default
-title: Home Page
+layout: single
+title: About Me
 ---
 
-# Welcome to my site!
-This page was built using **Jekyll** and Markdown. 
+# Hello World!
