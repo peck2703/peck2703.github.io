@@ -1,9 +1,8 @@
 ---
-layout: single
+layout: wide
 title: "My Portfolio Projects"
 permalink: /portfolio/
-toc: true
-toc_label: "Project Index"
+toc: false
 
 # --- GRID ONE: Code Review (Kept Separate) ---
 feature_row_cr:

@@ -23,6 +23,11 @@ $right-sidebar-width-wide:   220px !default;
     padding-right: 2% !important;
   }
 
+  .archive, .page {
+    width: 80% !important; 
+    padding-right: 20px !important;
+  }
+
   // Force the central text workspace to claim more horizontal room
   .initial-content {
     width: 62% !important; // Widened up from the standard default narrow footprint
@@ -37,6 +42,43 @@ $right-sidebar-width-wide:   220px !default;
     top: 2em !important; // Keeps it locked 2em away from the top viewport when scrolling
     z-index: 10;
   }
+
+  // Horizontal Scroll Slider Engine
+.horizontal-scroll-track {
+  .feature__wrapper {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    scroll-snap-type: x mandatory !important;
+    -webkit-overflow-scrolling: touch;
+    gap: 20px !important;
+    padding-bottom: 15px !important;
+
+    // Custom sleek scrollbar styling
+    &::-webkit-scrollbar {
+      height: 8px;
+    }
+    &::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      border-radius: 4px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 4px;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+  }
+}
+
+// Forces exactly 2 cards to fill the display window perfectly with a 10px padding
+  .feature__item {
+    flex: 0 0 calc(50% - 10px) !important; 
+    scroll-snap-align: start !important;
+    margin-bottom: 0 !important;
+  }
 }
 
 // Custom CSS to push the structural containers even wider
@@ -45,5 +87,12 @@ $right-sidebar-width-wide:   220px !default;
     max-width: 90%; // Tells the overall page to stretch further out to the screen edges
     padding-left: 2%;
     padding-right: 2%;
+  }
+}
+
+// Adjusts the slider to show 1 full card at a time on mobile screens
+@media (max-width: 48em) {
+  .horizontal-scroll-track .feature__item {
+    flex: 0 0 100% !important;
   }
 }
