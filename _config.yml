@@ -41,7 +41,7 @@ defaults:
       author_profile: true # Puts your profile card on the sidebar
 site_navigation:  main
 
-# Force the site to look at custom stylesheet
+# Force the site to look at stylesheet
 stylesheets:
-  - /assets/css/custom.scss
+  - /assets/css/main.scss
 

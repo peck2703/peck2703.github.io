@@ -41,16 +41,47 @@ feature_row_technical:
     btn_class: "btn--primary"
 ---
 
+<style>
+/* 1. Global alignment overrides for the remaining technical grid */
+.feature__item {
+  height: 480px !important;
+  max-height: 480px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 8px !important;
+  padding: 20px !important;
+}
+
+.feature__item .btn {
+  margin-top: auto !important;
+}
+
+/* 2. Custom Callout Box Styling for the single Code Review item */
+.video-callout-box {
+  background: #f8fafc;
+  border-left: 4px solid #ea4335; /* YouTube Red Accent Line */
+  padding: 24px;
+  border-radius: 4px;
+  margin: 20px 0 40px 0;
+}
+</style>
+
+
 # Selected Works
 
 Welcome to my portfolio showcase. Here you will find structural project highlights spanning software engineering, system architecture, and media analysis.
 
 ---
 
-### Planning & Code Analysis
-This initial phase establishes baseline code critiques, detailing software limitations and identifying target technical areas slated for core enhancements.
+<div class="video-callout-box">
+  <h4>Code Self-Review Walkthrough</h4>
+  <p>A video walkthrough where I systematically review existing code architectures across three projects and discuss technical pathways for future enhancement.</p>
+  <a href="https://youtu.be" class="btn btn--danger">View Video on YouTube</a>
+</div>
 
-{% include feature_row id="feature_row_cr" %}
+---
 
 ---
 
