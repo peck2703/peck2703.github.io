@@ -110,9 +110,10 @@ Welcome to my portfolio showcase. Here you will find structural project highligh
 ---
 
 <div class="video-callout-box">
-  <h4>Code Self-Review Walkthrough</h4>
+  <h4>🎥 Code Self-Review Walkthrough</h4>
   <p>A video walkthrough where I systematically review existing code architectures across three projects and discuss technical pathways for future enhancement.</p>
-  <a href="https://youtu.be" class="btn btn--danger">View Video on YouTube</a>
+  <!-- Click THE LINK BELOW TO THE FULL WATCH URL -->
+  <a href="https://youtube.com" class="btn btn--danger" target="_blank" rel="noopener noreferrer">View Video on YouTube</a>
 </div>
 
 ---
