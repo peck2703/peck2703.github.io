@@ -42,31 +42,65 @@ feature_row_technical:
 ---
 
 <style>
-/* 1. Global alignment overrides for the remaining technical grid */
+/* Dynamic Auto-Expanding Technical Grid */
+.feature__wrapper {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important; /* Forces cards onto new lines instead of breaking columns */
+  gap: 24px !important;
+  width: 100% !important;
+  align-items: stretch !important; /* Forces adjacent cards in a row to match heights automatically! */
+}
+
+/* Self-Correcting Layout Box Sizes */
 .feature__item {
-  height: 480px !important;
-  max-height: 480px !important;
   display: flex !important;
   flex-direction: column !important;
-  justify-content: space-between !important;
-  border: 1px solid #e2e8f0 !important;
-  border-radius: 8px !important;
-  padding: 20px !important;
+  background: #ffffff !important; 
+  border: 1px solid #e2e8f0 !important; 
+  border-radius: 8px !important; 
+  padding: 24px !important;
+  margin-bottom: 0 !important;
+  box-sizing: border-box !important;
+  
+  /* Swapped hard height limits for a smart baseline minimum */
+  min-height: 480px !important; 
+  height: 100% !important; 
 }
 
-.feature__item .btn {
-  margin-top: auto !important;
+/* High-Performance Text Space Auto-Expansion */
+.feature__item-body {
+  display: flex !important;
+  flex-direction: column !important;
+  flex-grow: 1 !important; 
+  margin-bottom: 20px !important;
 }
 
-/* 2. Custom Callout Box Styling for the single Code Review item */
+/* Keeps images perfectly shaped */
+.feature__item-teaser {
+  height: 160px !important; 
+  width: 100% !important;
+  object-fit: cover !important; 
+  border-radius: 6px !important;
+  margin-bottom: 15px !important;
+}
+
+/* Force Buttons to align perfectly at the absolute bottom */
+.feature__wrapper .btn {
+  margin-top: auto !important; 
+  align-self: flex-start !important; 
+}
+
+/* Custom Callout Box Styling for the single Code Review item */
 .video-callout-box {
   background: #f8fafc;
-  border-left: 4px solid #ea4335; /* YouTube Red Accent Line */
+  border-left: 4px solid #ea4335; 
   padding: 24px;
   border-radius: 4px;
   margin: 20px 0 40px 0;
 }
 </style>
+
 
 
 # Selected Works
