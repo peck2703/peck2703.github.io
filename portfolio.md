@@ -2,7 +2,10 @@
 layout: single
 title: "My Portfolio Projects"
 permalink: /portfolio/
-toc: false
+toc: true
+toc_label: "On This Page"
+toc_icon: "bars"
+toc_levels: 2..3
 
 # --- GRID ONE: Code Review (Kept Separate) ---
 feature_row_cr:
@@ -42,50 +45,48 @@ feature_row_technical:
 ---
 
 <style>
-/* Dynamic Auto-Expanding Technical Grid */
+/* Horizontal List Wrapper (Stacked Top-to-Bottom) */
 .feature__wrapper {
   display: flex !important;
-  flex-direction: row !important;
-  flex-wrap: wrap !important; /* Forces cards onto new lines instead of breaking columns */
+  flex-direction: column !important; 
   gap: 24px !important;
   width: 100% !important;
-  align-items: stretch !important; /* Forces adjacent cards in a row to match heights automatically! */
 }
 
-/* Self-Correcting Layout Box Sizes */
+/* Full Width Horizontal Cards */
 .feature__item {
   display: flex !important;
-  flex-direction: column !important;
+  flex-direction: row !important; /* Forces image on left, text on right */
   background: #ffffff !important; 
   border: 1px solid #e2e8f0 !important; 
   border-radius: 8px !important; 
   padding: 24px !important;
   margin-bottom: 0 !important;
   box-sizing: border-box !important;
-  
-  /* Swapped hard height limits for a smart baseline minimum */
-  min-height: 480px !important; 
-  height: 100% !important; 
+  width: 100% !important;
+  min-height: auto !important; /* Clears prior grid vertical constraint */
+  gap: 24px !important;
 }
 
-/* High-Performance Text Space Auto-Expansion */
+/* Landscape-Oriented Images */
+.feature__item-teaser {
+  width: 200px !important; 
+  height: 140px !important; 
+  object-fit: cover !important; 
+  border-radius: 6px !important;
+  margin-bottom: 0 !important;
+  flex-shrink: 0 !important; /* Keeps image from squishing */
+}
+
+/* Text Container Space Expansion */
 .feature__item-body {
   display: flex !important;
   flex-direction: column !important;
   flex-grow: 1 !important; 
-  margin-bottom: 20px !important;
+  margin-bottom: 0 !important;
 }
 
-/* Keeps images perfectly shaped */
-.feature__item-teaser {
-  height: 160px !important; 
-  width: 100% !important;
-  object-fit: cover !important; 
-  border-radius: 6px !important;
-  margin-bottom: 15px !important;
-}
-
-/* Force Buttons to align perfectly at the absolute bottom */
+/* Aligns Buttons Nicely on Bottom Left of Content Text */
 .feature__wrapper .btn {
   margin-top: auto !important; 
   align-self: flex-start !important; 
@@ -99,9 +100,25 @@ feature_row_technical:
   border-radius: 4px;
   margin: 20px 0 40px 0;
 }
+
+.page__title {
+  display: none !important;
+}
+
+/* Mobile Responsiveness for Landscape Layout */
+@media (max-width: 600px) {
+  .feature__item {
+    flex-direction: column !important;
+  }
+  .feature__item-teaser {
+    width: 100% !important;
+    height: 160px !important;
+  }
+  .page__title {
+  display: none !important;
+  }
+}
 </style>
-
-
 
 # Executive Summary
 
