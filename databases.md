@@ -8,6 +8,14 @@ toc_icon: "bars"
 toc_levels: 2..3
 ---
 
+<style>
+  .author__avatar img {
+  aspect-ratio: 1 / 1 !important;
+  object-fit: cover !important;
+}
+
+</style>
+
 ## Project Overview
 An ambitious Android mobile inventory application featuring secure CRUD API interactions, cloud database synchronization, and direct hardware integration.
 

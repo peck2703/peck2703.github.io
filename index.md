@@ -7,6 +7,14 @@ toc_icon: "cog"
 author_profile: true
 ---
 
+<style>
+  .author__avatar img {
+  aspect-ratio: 1 / 1 !important;
+  object-fit: cover !important;
+}
+
+</style>
+
 ### Hello I am an aspiring Full-Stack Developer!
 
 Welcome to my ePortfolio page. This site will focus on my Computer Science work and my related achievements. If you navigated here but were looking for my indie game development work, please visit my other ePortfolio page [here](), other links related to game-related work will be located in the sidebar.

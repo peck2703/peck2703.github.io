@@ -8,7 +8,13 @@ toc_icon: "bars"
 toc_levels: 2..3
 ---
 
-# Data Structures & Algorithms
+<style>
+  .author__avatar img {
+  aspect-ratio: 1 / 1 !important;
+  object-fit: cover !important;
+}
+
+</style>
 
 ## Project Overview
 A complex data structures project focused on algorithmic optimization, computational complexity analysis, and intensive performance benchmarking.
