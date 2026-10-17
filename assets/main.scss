@@ -104,6 +104,11 @@
   }
 }
 
+.author__avatar img {
+  aspect-ratio: 1 / 1 !important;
+  object-fit: cover !important;
+}
+
 // Responsive mobile adjustment
 @media (max-width: 48em) {
   .portfolio-slider-container .feature__item {

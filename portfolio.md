@@ -73,6 +73,7 @@ feature_row_technical:
   width: 200px !important; 
   height: 140px !important; 
   object-fit: cover !important; 
+  object-position: center !important;
   border-radius: 6px !important;
   margin-bottom: 0 !important;
   flex-shrink: 0 !important; /* Keeps image from squishing */
@@ -103,6 +104,11 @@ feature_row_technical:
 
 .page__title {
   display: none !important;
+}
+
+.author__avatar img {
+  aspect-ratio: 1 / 1 !important;
+  object-fit: cover !important;
 }
 
 /* Mobile Responsiveness for Landscape Layout */
