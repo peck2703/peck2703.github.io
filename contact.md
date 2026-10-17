@@ -43,7 +43,7 @@ If you prefer to bypass webforms, feel free to use these direct pathways:
 | Platform | Channel / Context | Action |
 | :--- | :--- | :--- |
 | **LinkedIn** | Professional networking, full career history, and recruitment. | [Connect on LinkedIn](https://www.linkedin.com/in/peck2703/){: .btn .btn--info target="_blank"} |
-| **GitHub** | Code repositories, contribution history, and technical artifacts. | [Follow on GitHub](https://www.linkedin.com/in/peck2703/){: .btn .btn--dark target="_blank"} |
+| **GitHub** | Code repositories, contribution history, and technical artifacts. | [Follow on GitHub](https://github.com/peck2703/){: .btn .btn--dark target="_blank"} |
 | **Email** | Direct inquiries and technical project consultation requests. | [Send an Email](mailto:michael.peck@snhu.edu){: .btn .btn--success} |
 
 ---
