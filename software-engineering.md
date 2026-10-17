@@ -8,8 +8,6 @@ toc_icon: "bars"
 toc_levels: 2..3
 ---
 
-# Software Engineering & Design
-
 ## Project Overview
 A fully migrated MEAN stack application that demonstrates mastery of Single Page Application (SPA) architecture, custom routing, and API integration.
 

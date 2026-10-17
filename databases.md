@@ -8,8 +8,6 @@ toc_icon: "bars"
 toc_levels: 2..3
 ---
 
-# Database Systems & Security
-
 ## Project Overview
 An ambitious Android mobile inventory application featuring secure CRUD API interactions, cloud database synchronization, and direct hardware integration.
 
