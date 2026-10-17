@@ -1,10 +1,10 @@
 ---
 layout: single
 title: Getting to Know Me
-
-toc:  true
-toc_label:  "On This Page"
-toc_icon:  "cog"
+toc: true
+toc_label: "On This Page"
+toc_icon: "cog"
+author_profile: true
 ---
 
 ### Hello I am an aspiring Full-Stack Developer!
