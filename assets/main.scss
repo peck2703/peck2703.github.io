@@ -1,6 +1,6 @@
 ---
-
-
+# The two lines of dashes at the top are mandatory! 
+# This tells Jekyll to process this file as a style engine.
 ---
 
 @charset "utf-8";
@@ -18,11 +18,22 @@
   }
 }
 
-// Global Avatar Aspect Ratio Normalization Engine
-.author__avatar img {
-  aspect-ratio: 1 / 1 !important;
-  object-fit: cover !important;
-  object-position: center !important;
+// Global Avatar Aspect Ratio & Dimension Normalization Engine
+.author__avatar, .sidebar .author__avatar {
+  display: block !important;
+  width: 100% !important;
+  max-width: 200px !important; // Keeps the picture container perfectly bounded
+  margin: 0 auto !important;
+
+  img {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 1 / 1 !important; // Locks it to a perfect square
+    object-fit: cover !important;   // Prevents warping/distortion
+    object-position: center !important;
+    border-radius: 50% !important;  // Ensures it stays round
+  }
 }
 
 
