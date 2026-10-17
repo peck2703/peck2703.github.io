@@ -1,6 +1,6 @@
 ---
-# The two lines of dashes at the top are mandatory! 
-# This tells Jekyll to process this file as a style engine.
+
+
 ---
 
 @charset "utf-8";
@@ -18,7 +18,17 @@
   }
 }
 
-// Absolute Horizontal Slider Override Engine
+// Global Avatar Aspect Ratio Normalization Engine
+.author__avatar img {
+  aspect-ratio: 1 / 1 !important;
+  object-fit: cover !important;
+  object-position: center !important;
+}
+
+
+// ==========================================================================
+// ENGINE ONE: HORIZONTAL SCROLL WHEEL CAROUSEL (.portfolio-slider-container)
+// ==========================================================================
 .portfolio-slider-container {
   width: 100% !important;
   display: block !important;
@@ -56,6 +66,8 @@
   }
 
   .feature__item {
+    display: flex !important;
+    flex-direction: column !important;
     flex: 0 0 calc(50% - 12px) !important;
     min-width: calc(50% - 12px) !important;
     max-width: calc(50% - 12px) !important;
@@ -63,57 +75,116 @@
     margin: 0 !important;
     scroll-snap-align: start !important;
     box-sizing: border-box !important;
-
-    .feature__item-teaser {
-      width: 100% !important;
-      max-height: 250px !important;
-      object-fit: cover !important;
-    }
-  }
-} 
-
-.portfolio-slider-container, .horizontal-scroll-track {
-  
-  .feature__item {
-    display: flex !important;
-    flex-direction: column !important;
     background: #ffffff; 
     border: 1px solid #e2e8f0; 
     border-radius: 8px; 
     padding: 20px !important;
-    height: 480px !important; 
-    box-sizing: border-box !important;
-  }
+    height: 480px !important;
 
-  .feature__item-teaser {
-    height: 180px !important; 
-    object-fit: cover !important; 
-    border-radius: 4px;
-    margin-bottom: 15px !important;
-  }
+    .feature__item-teaser {
+      width: 100% !important;
+      height: 180px !important; 
+      object-fit: cover !important; 
+      border-radius: 4px;
+      margin-bottom: 15px !important;
+    }
 
-  .feature__item-body {
+    .feature__item-body {
+      display: flex !important;
+      flex-direction: column !important;
+      flex-grow: 1 !important; 
+    }
+
+    .btn {
+      margin-top: auto !important; 
+      align-self: flex-start !important; 
+    }
+  }
+} 
+
+
+// ==========================================================================
+// ENGINE TWO: VERTICAL FULL-WIDTH LANDSCAPE CARDS (.portfolio-stacked-container)
+// ==========================================================================
+.portfolio-stacked-container {
+  width: 100% !important;
+  display: block !important;
+  margin: 30px 0 !important;
+
+  .feature__wrapper {
     display: flex !important;
-    flex-direction: column !important;
-    flex-grow: 1 !important; 
+    flex-direction: column !important; 
+    gap: 24px !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
   }
 
-  .btn {
-    margin-top: auto !important; 
-    align-self: flex-start !important; 
+  .feature__item {
+    display: flex !important;
+    flex-direction: row !important; 
+    background: #ffffff !important; 
+    border: 1px solid #e2e8f0 !important; 
+    border-radius: 8px !important; 
+    padding: 24px !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+    width: 100% !important;
+    min-height: auto !important;
+    gap: 24px !important;
+
+    .feature__item-teaser {
+      width: 200px !important; 
+      height: 140px !important; 
+      object-fit: cover !important; 
+      object-position: center !important;
+      border-radius: 6px !important;
+      margin-bottom: 0 !important;
+      flex-shrink: 0 !important; 
+    }
+
+    .feature__item-body {
+      display: flex !important;
+      flex-direction: column !important;
+      flex-grow: 1 !important; 
+      margin-bottom: 0 !important;
+    }
+
+    .btn {
+      margin-top: auto !important; 
+      align-self: flex-start !important; 
+    }
   }
 }
 
-.author__avatar img {
-  aspect-ratio: 1 / 1 !important;
-  object-fit: cover !important;
+// Red Accent Callout Box Style
+.video-callout-box {
+  background: #f8fafc;
+  border-left: 4px solid #ea4335; 
+  padding: 24px;
+  border-radius: 4px;
+  margin: 20px 0 40px 0;
 }
 
-// Responsive mobile adjustment
+
+// ==========================================================================
+// MEDIA QUERY RESPONSIVENESS OVERRIDES
+// ==========================================================================
 @media (max-width: 48em) {
+  // Collapse Horizontal Slider down to full card widths on mobile
   .portfolio-slider-container .feature__item {
     flex: 0 0 100% !important;
     min-width: 100% !important;
     max-width: 100% !important;
+  }
+
+  // Collapse Vertical Row Cards into vertical block units on mobile
+  .portfolio-stacked-container .feature__item {
+    flex-direction: column !important;
+    
+    .feature__item-teaser {
+      width: 100% !important;
+      height: 160px !important;
+    }
   }
 }

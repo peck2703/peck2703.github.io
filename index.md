@@ -8,11 +8,16 @@ author_profile: true
 ---
 
 <style>
-  .author__avatar img {
-  aspect-ratio: 1 / 1 !important;
-  object-fit: cover !important;
+/* Landscape-Oriented Images ONLY inside the project showcase container */
+.portfolio-slider-container .feature__item-teaser {
+  width: 200px !important; 
+  height: 140px !important; 
+  object-fit: cover !important; 
+  object-position: center !important;
+  border-radius: 6px !important;
+  margin-bottom: 0 !important;
+  flex-shrink: 0 !important; 
 }
-
 </style>
 
 ### Hello I am an aspiring Full-Stack Developer!
